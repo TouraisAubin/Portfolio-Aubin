@@ -1,7 +1,22 @@
 # Portfolio-Aubin
 
-Il s'agit de mon propre site web, faisant office de Portfolio.
+Il s'agit de **mon propre site web**, entièrement réalisé par moi-même, faisant office de **portfolio personnel**.
 
-Recouvrant ainsi l'intégralité de mon cursurs Post BAC, avec toutes mes formations, projets, concours, performances etc. Vous pourrez également trouver des informations sur mon profil, et la possibilité de me contacter si besoin à partir de la page contact.
+Vous y retrouverez l'intégralité de mon **parcours post-bac** :  
+- Mes **formations**,  
+- Mes **projets**,  
+- Mes **concours**,  
+- Mes **performances**...
 
-Lien vers mon site : https://touraisaubin.github.io/Portfolio-Aubin/Prog/Accueil/index.html
+Le site propose également une présentation de mon **profil**, ainsi qu’une **page de contact** permettant de me joindre facilement si besoin.
+
+---
+
+**⚠️ ATTENTION**  
+Ouvrir le site **uniquement avec Microsoft Edge ou Google Chrome**.  
+Le site **présente des bugs** et **n’est pas optimisé pour les autres navigateurs** (notamment Firefox), qui empêchent certains effets de défilement et animations.
+
+---
+
+🔗 **Lien vers mon site** :  
+👉 https://touraisaubin.github.io/Portfolio-Aubin/Prog/Accueil/index.html
