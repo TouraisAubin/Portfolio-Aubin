@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>LAMPE TORCHE A LED</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        <strong>Objectif :</strong><br>
+                        Réaliser un circuit permettant d’allumer une LED à l'aide d'un interrupteur,
+                        tout en optimisant sa consommation pour assurer une autonomie prolongée.
+                        <br><br>
+
+                        <strong>Caractéristiques :</strong><br>
+                        LED blanche (VT = 3,4V) alimentée par une pile R03 (1,5V). <br>
+                        Courant moyen de 10mA, autonomie de 15h minimum.<br>   
+                        Dimensions réduites : 50mm × 35mm.<br>
+                        <br><br>
+
+                        <strong>Défis techniques :</strong> <br>
+                        Adapter la tension d’alimentation et gérer l’énergie pour un éclairage efficace et durable.<br><br>
+                        Ce projet est une application des principes d’électronique, essentielle pour la conception de circuits.
+                    </p>                    
+                    <figure class="Sujet_image">
+                        <img src="photos/Lampe.jpg" alt="Robot POB">
+                        <figcaption>Lampe torche à LED.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Schématisation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Schématiser le circuit complet d'une lampe torche à LED.
+                            <br><br>
+
+                            <strong>Étude des besoins :</strong><br>
+                            Définir les composants essentiels : LED, interrupteur, TLC555, pile, transistor, bobine, condensateur et résistances.
+                            <br><br>
+
+                            <strong>Choix des composants :</strong><br>
+                            Sélectionner une LED blanche avec une tension de seuil de 3,4V, une pile alcaline R03 (1,5V) et une résistance adaptée pour limiter le courant.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/schema.png" alt="Conception du robot">
+                            <figcaption>Schéma électrique de la lampe troche à LED.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 2 : Calculs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Vérifier que les composants fonctionnent ensemble de manière optimale.
+                            <br><br>
+
+                            <strong>Détermination des valeurs :</strong><br>
+                            Calculer la résistance série nécessaire pour obtenir un courant moyen de 10mA dans la LED.
+                            <br><br>
+
+                            <strong>Autonomie de la lampe :</strong><br>
+                            Estimer la durée d’utilisation en fonction de la capacité de la pile et du courant consommé.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Calcul.jpg" alt="Conception du robot">
+                            <figcaption>Graphiques sous PSIM - Analyse des données.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 3 : PSIM</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Tester le comportement du circuit sur un logiciel de simulation 
+                            (sous PSIM) avant sa fabrication.
+                            <br><br>
+
+                            <strong>Simulation du circuit :</strong><br>
+                            Vérifier que la LED s’allume uniquement lorsque l’interrupteur 
+                            est activé, puis s'éteint quand on le relâche.
+                            <br><br>
+
+                            <strong>Analyse des résultats :</strong><br>
+                            Ajuster les valeurs des composants si nécessaire.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Psim.png" alt="Conception du robot">
+                            <figcaption>Test du comportement de la LED sous PSIM.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Réalisation du Typon</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Concevoir le circuit imprimé pour y souder les composants.
+                            <br><br>
+
+                            <strong> Disposition des composants :</strong><br>
+                            Placer la LED, l’interrupteur, la pile ainsi que le reste des composants de manière ergonomique.
+                            <br><br>
+
+                            <strong>Traçage des pistes :</strong><br>
+                            Définir les connexions électriques entre les composants sur le typon.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/typon.png" alt="Conception du robot">
+                            <figcaption>Réalisation du typon de notre circuit.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 5 : Montage des composants</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Assembler les différents éléments du circuit.
+                            <br><br>
+
+                            <strong>Soudage des composants :</strong><br>
+                            Fixer l'ensemble de nos composants que nous avons pu tester sur le circuit imprimé.
+                            <br><br>
+
+                            <strong>Câblage :</strong><br>
+                            Relier correctement tous les éléments pour assurer le bon fonctionnement.
+                            <br><br>
+
+                            <strong>Test du montage :</strong><br>
+                            Vérifier que la LED s’allume bien lorsque l’interrupteur est enclenché.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Lampe.jpg" alt="Conception du robot">
+                            <figcaption>Montage des divers composants sur le typon.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Bilan - Coûts</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Évaluer le coût de chaque composant et ainsi en déduire le coût de l'ensemble du projet.
+                            <br><br>
+
+                            <strong>Analyse des dépenses :</strong><br>
+                            Estimer le prix total des composants et des outils nécessaires.
+                            <br><br>
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Nomenclature.png" alt="Conception du robot">
+                            <figcaption>Nomenclature de l'ensemble des composants utilisés.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                    Ce projet de lampe torche à LED nous a permis d’appliquer nos connaissances en électronique,
+                    de la conception à l’assemblage. 
+                    <br><br>
+
+                    Grâce aux calculs et simulations, nous avons optimisé son fonctionnement et son autonomie.<br><br>
+                    Le montage et les tests ont confirmé la fiabilité du circuit, 
+                    tout en nous offrant une expérience pratique précieuse. 
+                    <br><br>
+
+                    Des améliorations, comme une batterie rechargeable ou un variateur d’intensité, 
+                    pourraient encore perfectionner cette lampe.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/LampeON.jpg" alt="Robot finalisé">
+                        <figcaption>Lampe torche à LED en fonctionnement.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Lampe - TOURAIS et HUYNH.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

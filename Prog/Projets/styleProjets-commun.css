@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0f0f2e, #1b002a);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.85;
+  overflow: hidden;
+}
+
+body {
+  background-color: #0a0a0a; 
+  color: #e0f7fa; 
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Menu barre */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 3vh;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2vh;
+  text-transform: uppercase;
+  letter-spacing: 0.2vh;
+  margin-left: 5vh;
+}
+
+nav {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2vh;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  position: relative;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1vh 2vh;
+  text-transform: uppercase;
+  border: 0.5vh solid transparent;
+  border-radius: 1vh;
+  font-size: 2.7vh;
+  font-weight: bold;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav li a:hover,
+nav li.active a {
+  background: aliceblue;
+  color: #000;
+  border-color: aliceblue;
+}
+
+/* Menu déroulant */
+nav li.projets .dropdown,
+nav li.Moi .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 1vh;
+  min-width: 32vh;
+  padding: 1vh 0;
+  z-index: 999;
+  box-shadow: 0 2vh 10vh rgba(0,0,0,0.7);
+}
+
+nav li.projets:hover .dropdown,
+nav li.projets:focus-within .dropdown,
+nav li.Moi:hover .dropdown,
+nav li.Moi:focus-within .dropdown {
+  display: block;
+}
+
+nav .dropdown li {
+  margin: 0;
+}
+
+nav .dropdown li a {
+  color: aliceblue;
+  padding: 1vh 2vh;
+  margin: 0;
+  font-size: 2.2vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .dropdown li a:hover {
+  background-color: aliceblue;
+  color: #000;
+}
+
+/* ---------------------- TITRES ---------------------- */
+.Titre {
+  margin-top: 40vh;
+  text-align: center;
+}
+
+.Titre h1 {
+  font-size: 12vh;
+  color: #0ff;
+  text-shadow: 0 0 1.5vh #0ff;
+}
+
+.Titre p {
+  margin: 10vh auto;
+  padding: 5vh;
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1vh solid #0ff;
+  border-radius: 1vh;
+  color: #fff;
+  font-size: 3.5vh;
+  box-shadow: 0 0 1vh #0ff;
+}
+
+/* ---------------------- BOUTONS ---------------------- */
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 3vh;
+  margin: 7vh 0 35vh;
+}
+.button a {
+  text-decoration: none;
+  padding: 2vh 3vh;
+  border: .2vh solid #0ff;
+  color: #0ff;
+  border-radius: 1vh;
+  font-size: 3vh;
+  background: rgba(0, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 1vh;
+}
+
+.button a:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 2vh #0ff;
+}
+
+/* ---------------------- TITRE ATOUT ---------------------- */
+.titre-atout {
+  margin: 10vh auto 5vh;
+  padding: 3vh;
+  width: 70%;
+  text-align: center;
+  font-size: 6vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4vh;
+  background: rgba(0, 0, 30, 0.7);
+  color: #0ff;
+  border-radius: 2vh;
+  box-shadow: 0 0 1vh #0ff;
+  animation: titleAtout 5s ease infinite alternate;
+}
+
+@keyframes titleAtout {
+  0% {
+      color: #0ff;
+      text-shadow: 0 0 1vh rgb(0, 0, 255), 0 0 3vh #0ff;
+  }
+  100% {
+      color: #ff0;
+      text-shadow: 0 0 1vh rgb(0, 0, 255), 0 0 2vh #ff0;
+  }
+}
+
+/* ---------------------- PROJET ---------------------- */
+.projet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.Etape, .Presentation_Sujet, .Conclusion_Sujet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  margin: 10vh 5vw;
+  flex-wrap: nowrap; 
+}
+
+.Etape p, .Presentation_Sujet p, .Conclusion_Sujet p {
+  flex: 1 1 55%;
+  background: #040406;
+  padding: 3vh 4vh;
+  border-radius: 1vh;
+  border: 0.3vh solid #0ff;
+  color: #fff;
+  box-shadow: 0 0 1vh #0ff;
+  font-size: 2.5vh;
+  word-wrap: break-word;
+  margin: 0 auto;
+  cursor: default;
+  text-align: justify;
+}
+
+.Etape img, .Presentation_Sujet img, .Conclusion_Sujet img {
+  flex: 1 1 40%;
+  width: 100%;
+  max-width: 70vh; /* plus grand qu'avant */
+  border-radius: 2.2vh;
+  box-shadow: 0 0 2vh #0ff;
+}
+
+.contenu p {
+  background: #040406;
+  padding: 3vh 4vh;
+  border-radius: 1vh;
+  border: 0.3vh solid #0ff;
+  color: #fff;
+  box-shadow: 0 0 1vh #0ff;
+  font-size: 2.5vh;
+  word-wrap: break-word;
+  max-width: 120vh; /* ← augmenté ici (avant : 100vh) */
+  margin: 0 auto;
+  cursor: default;
+}
+
+.contenu strong {
+  font-weight: bold; /* S'assure que le texte reste en gras */
+  color: #00FFFF; /* Une couleur éclatante pour attirer l'attention */
+  font-size: 1.2em; /* Augmente légèrement la taille du texte pour plus d'impact */
+  position: relative;
+  padding-left: 1.5em; /* Espace pour le rond */
+}
+
+.contenu strong::before {
+  content: ''; /* Pas de texte, juste un rond */
+  position: absolute; /* Positionnement absolu par rapport au texte */
+  left: 0; /* Positionner le rond au début */
+  top: 50%; /* Centrer verticalement */
+  transform: translateY(-50%); /* Centrer exactement */
+  width: 1.5vh; /* Taille du rond */
+  height: 1.5vh; /* Taille du rond */
+  border-radius: 50%; /* Faire un cercle */
+  background-color: #0ff; /* Couleur du cercle */
+}
+
+/* Ordre image à gauche/droite */
+.Presentation_Sujet img, .Conclusion_Sujet img {
+  order: 1;
+}
+.Presentation_Sujet p, .Conclusion_Sujet p {
+  order: 2;
+}
+.Etape img {
+  order: 1;
+}
+.Etape p {
+  order: 2;
+}
+
+/* ---------------------- TITRES de section ---------------------- */
+h2 {
+  font-size: 4vh;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0ff;
+  margin: 4vh 10vh 2vh;
+}
+
+/* ---------------------- Séparateur ---------------------- */
+.separator {
+  height: .5vh;
+  background: #0ff;
+  margin: 5vh auto;
+  border-radius: 2vh;
+  width: 80%;
+  box-shadow: 0 0 1vh #0ff;
+}
+
+/* ---------------------- Bonus sujet ---------------------- */
+.Bonus_Sujet {
+  text-align: center;
+}
+
+.Bonus_Sujet a {
+  padding: 2vh 3vh;
+  font-size: 3vh;
+  color: #0ff;
+  border: .3vh solid #0ff;
+  border-radius: 2vh;
+  background: rgba(0, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.Bonus_Sujet a:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 1vh #0ff;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+.scrollToTopBtn{
+  position:fixed;bottom:2vh;right:2vh;background:linear-gradient(145deg,rgba(30,40,180,.85),rgba(70,90,220,.85));
+  color:#e0e6ff;border:none;border-radius:50%;padding:1.2vh 3vh;font-size:4.2vh;cursor:pointer;
+  box-shadow:0 0 1vh rgba(70,90,220,.6),inset 0 0 1vh rgba(120,140,255,.4);
+  filter:drop-shadow(0 0 1vh rgba(70,90,220,.5));
+  transition:background-color .3s ease,transform .3s ease,filter .3s ease,box-shadow .3s ease;
+  z-index:1000;display:none;backdrop-filter:blur(1vh);-webkit-backdrop-filter:blur(6vh);
+}
+.scrollToTopBtn:hover{
+  background:linear-gradient(145deg,rgba(60,80,230,.95),rgba(100,120,255,.95));
+  transform:scale(1.12);filter:drop-shadow(0 0 1vh rgba(100,120,255,.75));
+  box-shadow:0 0 1vh rgba(100,120,255,.8),inset 0 0 1vh rgba(160,180,255,.6);
+}
+.scrollToTopBtn:active{
+  background:linear-gradient(145deg,rgba(50,70,210,.9),rgba(80,100,240,.9));
+  transform:scale(1.05);filter:drop-shadow(0 0 6vh rgba(80,100,240,.6));
+  box-shadow:0 0 1vh rgba(80,100,240,.7),inset 0 0 1vh rgba(140,160,230,.5);
+}
+
+footer{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  padding:2vh;text-align:center;color:#bbb;
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  box-shadow:inset 0 1vh 10vh rgba(255,255,255,.1);position:relative;
+  overflow: hidden;
+}
+footer .copyright{
+  margin:0 0 1vh 0;font-size:3vh;letter-spacing:.05vh;color:#ccc;user-select:none;
+}
+footer .reseaux{display:flex;justify-content:center;gap:5vh;}
+footer .reseaux a{display:flex;transition:transform .3s ease,filter .3s ease;width:5vh;height:5vh;}
+footer .reseaux a img{width:5vh;height:5vh;object-fit:contain;transition:filter .3s ease;}
+footer .reseaux a:hover{transform:scale(1.2);filter:grayscale(0%) drop-shadow(0 0 1vh rgba(0,255,255,.6));}
+footer .reseaux a:hover img{filter:invert(50%) sepia(80%) saturate(1500%) hue-rotate(150deg) brightness(110%) drop-shadow(0 0 1vh #009ba7);}
+
+html{
+  scroll-behavior:smooth;
+}
+[id] {
+      scroll-margin-top: 47vh;
+}
+
+figcaption {
+  margin-top: 1vh;
+  font-style: italic;
+  font-size: 2.2vh;
+  color: #fff;
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  padding: 1.2vh 2vh;
+  border-radius: 1.5vh;
+  text-align: center;
+  box-shadow:
+    0 0.3vh 0.8vh rgba(0, 255, 255, 0.3),
+    0 0 1.2vh rgba(0, 255, 255, 0.5) inset;
+  user-select: none;
+  transition: all 0.3s ease;
+
+  border: 0.3vh solid rgba(0, 255, 255, 0.6);
+  backdrop-filter: blur(3vh);
+}
+
+.robot-photo figcaption {
+  text-align: center;
+  margin: 2vh auto;
+  max-width: 130vh;
+  display: block;
+  width: 100%;
+}
+
+.robot-photo img {
+    max-width: 130vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2vh;
+    border: 0.5vh solid #0ff;
+    box-shadow: 0 0 1vh #0ff;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; /* Mettre auto si on veut pouvoir cliquer dessus */
+  /* none poru tout retire */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 3vh;
+  margin: 7vh 0;
+}
+
+.button-container a {
+  text-decoration: none;
+  padding: 2vh 3vh;
+  border: .2vh solid #0ff;
+  color: #0ff;
+  border-radius: 1vh;
+  font-size: 3vh;
+  background: rgba(0, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 1vh;
+}
+
+.button-container a:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 2vh #0ff;
+}

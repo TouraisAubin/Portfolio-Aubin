@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+       <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>OLYMPIADES FANUC CN BUT3</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        Les Olympiades FANUC BUT3 CN sont une compétition technique 
+                        dédiée aux étudiants en BUT, BTS. 
+                        <br><br>
+                        Ce challenge vise à mettre en pratique les compétences en commande 
+                        numérique (CN) à travers la programmation et l’exploitation 
+                        d’une machine-outil équipée d’un automate FANUC.
+                        <br><br>
+                        L’objectif est de maîtriser l’environnement FANUC et d’optimiser 
+                        l’automatisation d’un procédé industriel, en respectant 
+                        les normes et contraintes de production.
+                        <br><br>
+                        Nous connaissons mieux cette année les attentes du concours, 
+                        suite à notre participation de l'an passé, où nous avons malheureusement obtenu la 4ème place..
+                    </p>                    
+                    <figure class="Sujet_image">
+                        <img src="photos/Cellule.png" alt="Robot POB">
+                        <figcaption>Commande Numérique éducative.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Grafcet</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Définition :</strong><br>
+                            Le GRAFCET (Graphe Fonctionnel de Commande Étape-Transition) est 
+                            un outil fondamental pour la conception et la 
+                            structuration des systèmes automatisés. 
+                            <br><br>
+
+                            <strong>Utilisation dans le projet :</strong><br>
+                            Dans le cadre de ce projet, il permet de représenter 
+                            graphiquement la séquence des actions à réaliser par la machine 
+                            en fonction des signaux d’entrée et des conditions définies. 
+                            <br><br>
+
+                            Cette représentation facilite la compréhension du fonctionnement 
+                            du programme et son implémentation sur l’automate FANUC.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Grafcet.png" alt="Conception du robot">
+                            <figcaption>Grafcet de l'avant-projet.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : CNC GUIDE</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation :</strong><br>
+                            CNC GUIDE est un logiciel de simulation utilisé 
+                            pour programmer et tester des machines-outils 
+                            FANUC sans nécessiter de matériel physique. 
+                            <br><br>
+
+                            <strong>Fonctionnalités :</strong><br>
+                            Il permet de :<br>
+                            - Développer et tester des programmes en langage ISO,<br>
+                            - Simuler les déplacements et l’usinage avant une exécution réelle,<br>
+                            - Valider les stratégies d’usinage et optimiser les cycles.
+                            <br><br>
+
+                            Ce logiciel est essentiel pour minimiser les erreurs et 
+                            assurer une bonne compréhension du fonctionnement des commandes numériques.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/CNCGuide.png" alt="Conception du robot">
+                            <figcaption>Simulation sous le logiciel CNC Guide.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : FANUC PICTURE</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation :</strong><br>
+                            FANUC PICTURE est un outil de développement graphique permettant 
+                            de créer des interfaces homme-machine (IHM) personnalisées 
+                            pour les Commandes Numériques FANUC. 
+                            <br><br>
+
+                            <strong>Utilisations :</strong><br>
+                            Il est utilisé pour :<br>
+                            - Concevoir des interfaces ergonomiques adaptées aux besoins des opérateurs,<br>
+                            - Afficher en temps réel des informations critiques (position, état des outils, alertes),<br>
+                            - Intégrer des boutons de commande et des indicateurs visuels pour un pilotage intuitif.
+                            <br><br>
+
+                            Cet outil améliore l’interaction entre l’opérateur et la machine, 
+                            facilitant l’exploitation et le diagnostic des opérations.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/IHM.png" alt="Conception du robot">
+                            <figcaption>Interface Homme-Machine sous Fanuc Picture.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : FANUC LADDER</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation :</strong><br>
+                            Le FANUC LADDER est l’environnement de programmation 
+                            dédié aux automates FANUC, basé sur un langage à contacts (Ladder). 
+                            <br><br>
+
+                            <strong>Fonctionnalités :</strong><br>
+                            Il permet de :<br>
+                            - Gérer les entrées/sorties de l’automate,<br>
+                            - Créer des séquences de commande automatisées,<br>
+                            - Superviser le fonctionnement de la machine à travers des logiques câblées et programmées.
+                            <br><br>
+
+                            L’utilisation de FANUC LADDER est essentielle pour la gestion des automatismes industriels et l’optimisation 
+                            du contrôle de la machine-outil.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Ladder.png" alt="Conception du robot">
+                            <figcaption>Programmation automates sous Fanuc Ladder III.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : LANGAGE ISO</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation :</strong><br>
+                            Le langage ISO est la norme de programmation 
+                            utilisée pour contrôler les machines-outils à commande numérique (CNC).
+                            <br><br>
+
+                            <strong>Fonctionnement :</strong><br>
+                            Ce langage, basé sur des codes G et M, définit les trajectoires, les vitesses et les opérations que la machine doit réaliser. 
+                            <br><br>
+
+                            <strong>Principales fonctionnalités :</strong><br>
+                            - Code G : Déplacements et cycles d’usinage,<br>
+                            - Code M : Commandes auxiliaires (changement d’outil, arrêt de broche, etc.),<br>
+                            - Paramétrage avancé pour optimiser la production et la précision.
+                            <br><br>
+
+                            Ce langage est indispensable pour assurer un usinage efficace et sécurisé.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/ISO.png" alt="Conception du robot">
+                            <figcaption>Programmation ISO de la CN.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : RESULTAT</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Bilan du concours :</strong><br>
+                            À l’issue du concours, nous avons réussi à :<br>
+                            - Élaborer un GRAFCET structuré pour le pilotage du procédé,<br>
+                            - Programmer et tester le fonctionnement via CNC GUIDE,<br>
+                            - Concevoir une IHM optimisée avec FANUC PICTURE,<br>
+                            - Développer un programme LADDER performant pour l’automate,<br>
+                            - Écrire et exécuter un programme ISO qui respecte les contraintes d’usinage.
+                            <br><br>
+                            
+                            <strong>Résultats :</strong><br>
+                            Ces résultats montrent notre maîtrise des outils FANUC et notre capacité à 
+                            développer une chaîne complète d’automatisation industrielle.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/monde.jpg" alt="Conception du robot">
+                            <figcaption>Epreuves lors de la journée de la finale.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                        Cette compétition nous a permis d’approfondir nos connaissances en 
+                        commande numérique et automatisation industrielle, tout en nous confrontant 
+                        à des contraintes réelles de production. 
+                        <br><br>
+                        Grâce aux outils FANUC, nous avons développé des compétences 
+                        essentielles pour le domaine de l’industrie 4.0, en améliorant notre 
+                        compréhension de la programmation, du contrôle et de l’optimisation 
+                        des systèmes automatisés.
+                        <br><br>
+                        Au-delà de l’aspect technique, ces Olympiades ont 
+                        été une expérience enrichissante, mettant en avant le 
+                        travail en équipe, la rigueur et l’ingéniosité nécessaires 
+                        pour réussir dans le domaine de la commande numérique. 
+                        <br><br>
+                        Nous sommes fiers d'avoir pu réaliser une meilleure performance que l'an passé, et de plus, obtenir la première place ! 
+                        <br><br>
+                        Merci à mon équipe d'avoir été présentes, et à tous les organisateurs ainsi qu'à notre école pour cette expérience de folie.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/FANUC.JPG" alt="Robot finalisé">
+                        <figcaption>1er prix pour notre équipe au Olympiades Fanuc.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport final FANUC BUT3 - Evry.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+            
+        <figure class="robot-photo">
+            <img src="photos/1er_Prix_FANUC.jpg" alt="Robot finalisé">
+            <figcaption>Certificat du 1er prix pour les Olympiades Fanuc édition 2024-2025.</figcaption>
+        </figure>
+    
+        </div>
+
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>GESTION BASE DE DONNEES</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                    Le projet porte sur la création d'une base de données 
+                    pour la gestion d'un centre équestre nommé Pégase. 
+                    <br><br>
+
+                    Le centre propose divers cours équestres (obstacles, voltige, dressage, etc.) 
+                    et souhaite informatiser la gestion des adhérents, des chevaux, 
+                    des cours, des moniteurs et des épreuves sanctionnées par des diplômes. 
+                    <br><br>
+
+                    L'objectif est de mettre en place une solution informatique permettant de 
+                    gérer les inscriptions aux cours, l'attribution des chevaux, les tarifs 
+                    des cours en fonction des périodes et des tranches d'âge des adhérents, 
+                    ainsi que l'organisation des épreuves.
+                    </p>              
+                    <figure class="Sujet_image">
+                        <img src="photos/BD.png" alt="Robot POB">
+                        <figcaption>Gestion d'une base de données.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Modèle Relationnel</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Définition du modèle relationnel :</strong><br>
+                            Le modèle relationnel consiste à organiser les données sous forme de tables, 
+                            chaque table représentant une entité (par exemple : les adhérents, les chevaux, les moniteurs, etc.).
+                            <br><br>
+
+                            <strong>Relations entre les entités :</strong><br>
+                            Les relations entre les entités sont définies par des clés primaires et des clés étrangères.
+                            <br><br>
+
+                            <strong>Avantages :</strong><br>
+                            Ce modèle permet de garantir l'intégrité des données et de structurer les informations de manière cohérente.
+                            <br><br>
+
+                            <strong>Exemple concret :</strong><br>
+                            Une table peut lier les adhérents à leurs inscriptions aux cours et aux chevaux attribués.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Relation.png" alt="Conception du robot">
+                            <figcaption>Modèle relationnel du centre équestre.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 2 : Modèle Graphique</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation du modèle graphique :</strong><br>
+                            Le modèle graphique est représenté par un diagramme de classes qui montre les différentes 
+                            entités du système et leurs relations.
+                            <br><br>
+
+                            <strong>Utilité du diagramme :</strong><br>
+                            Ce diagramme permet de visualiser la structure de la base de données de manière plus intuitive.
+                            <br><br>
+
+                            <strong>Représentation des entités :</strong><br>
+                            Les entités sont représentées par des classes, et les relations entre elles 
+                            (par exemple : un adhérent peut s'inscrire à plusieurs cours) sont illustrées par des liens.
+                            <br><br>
+
+                            <strong>Intérêt du modèle :</strong><br>
+                            Cela permet de mieux comprendre les dépendances et les interactions entre les différentes parties du système.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Schema.png" alt="Conception du robot">
+                            <figcaption>Diagramme de classes du centre équestre.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 3 : Création de table</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Création des tables :</strong><br>
+                            Une fois le modèle relationnel conçu, il est nécessaire de créer les tables correspondantes 
+                            dans la base de données.
+                            <br><br>
+
+                            <strong>Définition des tables avec SQL :</strong><br>
+                            Chaque table est définie par une série de requêtes SQL, spécifiant les attributs de chaque entité 
+                            et les relations entre elles.
+                            <br><br>
+
+                            <strong>Exemple de tables :</strong><br>
+                            Pour la table <em>Adherents</em>, on crée une table contenant les informations sur les adhérents 
+                            (nom, prénom, âge, etc.), et pour la table <em>Inscriptions</em>, on relie les adhérents aux cours auxquels 
+                            ils sont inscrits, ainsi qu’aux chevaux qu’ils utilisent.
+                            <br><br>
+
+                            <strong>Intégrité des données :</strong><br>
+                            Les clés primaires et étrangères sont utilisées pour garantir l’intégrité référentielle.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Table.png" alt="Conception du robot">
+                            <figcaption>Création des tables pour le centre équestre.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                    Ce projet a permis de modéliser une base de données répondant aux besoins 
+                    du centre équestre Pégase en matière de gestion des adhérents, des cours et des chevaux. 
+                    <br><br>
+
+                    Les modèles relationnel et graphique ont été établis pour garantir une gestion cohérente des données. 
+                    <br><br>
+
+                    Les étapes suivantes consisteront à insérer des tuples pour tester la base de données et à 
+                    développer des requêtes SQL afin d’exploiter les informations de manière efficace. 
+                    <br><br>
+
+                    Ce système permettra une gestion automatisée et simplifiée des inscriptions, des 
+                    plannings de cours et des épreuves, ainsi qu’un suivi des moniteurs et des chevaux.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/BD.png" alt="Robot POB">
+                        <figcaption>Gestion complète des données d'un centre équestre.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/BD - INFO FONTAINEBLEAU BUT1/SAE BD Etape 1 TOURAIS BRAHMI G.1.pdf" target="_blank">Lien vers le rapport - ETAPE 1</a>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/BD - INFO FONTAINEBLEAU BUT1/SAE BD Etape 2 TOURAIS BRAHMI G.1.pdf" target="_blank">Lien vers le rapport - ETAPE 2</a>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/BD - INFO FONTAINEBLEAU BUT1/SAE BD Etape 3 TOURAIS BRAHMI G.1.pdf" target="_blank">Lien vers le rapport - ETAPE 3</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

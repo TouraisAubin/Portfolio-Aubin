@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>STAGE BUT2 <br> Laboratoire IBISC</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        Mon stage de deuxième année de BUT GEII s’est déroulé au sein du 
+                        laboratoire IBISC, spécialisé dans l’intelligence artificielle et la robotique. 
+                        <br><br>
+                        L’objectif principal était de participer à deux événements majeurs pour valoriser 
+                        les compétences des étudiants et mettre en œuvre des solutions concrètes en robotique : <br>
+                        - Les Olympiades FANUC 2023-2024 Commande Numérique BUT2 <br>
+                        - Le concours robotique des départements GEII à Cachan, une compétition portant sur un 
+                        robot mobile autonome. 
+                        <br><br>
+                        Ce stage m’a permis de mettre en pratique mes compétences en automatisme, 
+                        programmation embarquée, modélisation 3D, et surtout de travailler en équipe sur des projets concrets dans un cadre technique stimulant.
+                    </p>               
+                    <figure class="Sujet_image">
+                        <img src="photos/evry.jpeg" alt="Robot POB">
+                        <figcaption>IUT Evry Pelvoux</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Olympiades FANUC</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Qualification</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation des Olympiades FANUC :</strong><br>
+                            Les Olympiades FANUC consistent à programmer un robot industriel FANUC 
+                            pour accomplir une tâche définie dans un temps limité. 
+                            <br><br>
+
+                            <strong>Phase de qualification :</strong><br>
+                            Notre projet a commencé par une phase de qualification, durant laquelle nous avons 
+                            conçu un programme de démonstration en utilisant le simulateur CNC Guide et le 
+                            langage spécifique des robots FANUC.
+                            <br><br>
+
+                            <strong>Travail en binôme :</strong><br>
+                            Avec mon binôme, également en stage et participant au concours, nous avons rédigé 
+                            un dossier complet détaillant notre approche. Ce dossier comprenait nos choix techniques, 
+                            les solutions envisagées, ainsi qu’un extrait vidéo de notre simulation. 
+                            <br><br>
+
+                            Grâce à ce travail, notre équipe a été officiellement qualifiée pour la finale nationale.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/qualif.png" alt="Conception du robot">
+                            <figcaption>Qualification FANUC - Avant projet</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Préparation à la finale</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Phase de préparation :</strong><br>
+                            Après la qualification, nous avons entamé une phase de préparation intensive. 
+                            <br><br>
+
+                            Il a fallu affiner notre solution en corrigeant les imprécisions dans les trajectoires 
+                            et en optimisant le temps d’exécution du robot. 
+                            <br><br>
+
+                            <strong>Entraînement au quiz technique :</strong><br>
+                            Parallèlement, nous avons suivi un entraînement régulier pour le quiz technique FANUC, 
+                            qui faisait partie intégrante du concours final. 
+                            <br><br>
+
+                            <strong>Sujets du quiz :</strong><br>
+                            Ce quiz couvrait des sujets variés, tels que la robotique industrielle, les protocoles de communication, 
+                            les caractéristiques techniques des robots FANUC, les normes de sécurité, ainsi que le langage ISO.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/fanuc.png" alt="Conception du robot">
+                            <figcaption>Notes - préparation à la journée Finale</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Rédaction d’un document complet pour les prochaines éditions</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Objectif :</strong><br>
+                            Afin d’aider les futures promotions à se préparer efficacement, 
+                            nous avons rédigé un document de référence complet. 
+                            <br><br>
+                            Ce guide est destiné aux étudiants du département GEII qui participeront aux éditions suivantes. 
+                            <br><br>
+
+                            <strong>Contenu du guide :</strong><br>
+                            Il comprend : 
+                            <br>
+                            - Une introduction au concours FANUC et à ses enjeux, 
+                            <br>
+                            - Un tutoriel détaillé pour l’installation et l’utilisation du logiciel CNC Guide, 
+                            <br>
+                            - Des explications complètes sur le langage ISO (exemples, fonctions, structure de programme), 
+                            <br>
+                            - Des conseils stratégiques pour optimiser la gestion du temps et des mouvements, 
+                            <br>
+                            - Un guide de révision pour le quiz technique. 
+                            <br><br>
+
+                            Ce livrable constitue un véritable manuel de transmission, 
+                            conçu pour gagner du temps et éviter les erreurs courantes.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/doc.png" alt="Conception du robot">
+                            <figcaption>Document explicatif FANUC</figcaption>
+                        </figure>
+                    </div>
+                    <div class="Bonus_Sujet">
+                        <a href="../../Concours/FANUC_CN_BUT2/Autres/Document Explicatif Fanuc - FINAL.pdf" target="_blank">Lien vers le document explicatif</a>
+                    </div>                
+                </div>
+                
+                <div class="separator"></div>
+
+                <h1 class="titre-atout">Concours Cachan</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Conception et modélisation 3D du robot</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Présentation du concours :</strong><br>
+                            Le concours robotique de Cachan regroupe de nombreux IUT de France.
+                            <br><br>
+
+                            <strong>Objectif :</strong><br>
+                            Chaque équipe doit construire un robot mobile autonome capable de détecter des obstacles et de pouvoir se repérer dans une arène pour se diriger vers un point.
+                            <br><br>
+
+                            Nous avons commencé par concevoir le robot en 3D en utilisant un logiciel de modélisation mécanique.
+                            <br><br>
+
+                            Cette étape a été cruciale pour prévoir l’assemblage, choisir les composants (roues, châssis, moteurs) et anticiper les contraintes de poids et de stabilité.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Coque.png" alt="Conception du robot">
+                            <figcaption>Modélisation 3D de la coque du robot</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Programmation Arduino et intégration</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Équipement et programmation :</strong><br>
+                            Nous avons ensuite équipé notre robot d’une carte Arduino et programmé l’ensemble de son comportement en langage C : 
+                            <br><br>
+
+                            <strong>Fonctionnalités principales :</strong><br>
+                            - Lecture des capteurs de couleurs pour détecter les lignes blanches délimitant l’arène<br>
+                            - Utilisation de capteurs à ultrasons pour repérer l’adversaire et les obstacles<br>
+                            - Stratégie de combat : guidage via balise, esquive, rotation<br>
+                            - Gestion des moteurs et régulation de la vitesse
+                            <br><br>
+
+                            Chaque fonctionnalité a été testée individuellement, puis intégrée dans un programme global.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/arduino.jpg" alt="Conception du robot">
+                            <figcaption>Exemple Code arduino</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Test final et mise en condition réelle</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Phase de tests :</strong><br>
+                            Avant le concours, nous avons réalisé une batterie de tests dans des conditions proches du réel : 
+                            <br>
+                            - Tests de robustesse face aux chocs <br>
+                            - Calibration des capteurs <br>
+                            - Optimisation des trajectoires <br>
+                            - Tests de réaction rapide à des situations imprévues 
+                            <br><br>
+
+                            <strong>Résultats des tests :</strong><br>
+                            Ces tests nous ont permis d’identifier les points faibles du robot et d’effectuer les derniers ajustements pour le rendre plus compétitif.
+                        </p>
+
+                        <figure class="Exemple_image">
+                            <img src="photos/cachna.jpeg" alt="Conception du robot">
+                            <figcaption>Festival de cachan - Concours</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Voir les projets complets</h2>
+                    <div class="Etape">
+                        <p>
+                            Pour ceux qui souhaitent explorer davantage les deux projets, vous trouverez toutes les informations détaillées sur les différentes étapes, les sujets abordés, ainsi que des photos et le code source des projets dans les sections suivantes : 
+                            <br><br>
+                            <strong>Olympiades FANUC But2</strong> : Découvrez les défis techniques et la progression de notre équipe tout au long de cette compétition, avec des détails sur la programmation, les stratégies, et les résultats. <br>
+                            <br>
+                            <strong>Concours Robotique des GEII - Cachan</strong> : Plongez dans l'univers du concours, avec des explications sur la conception du robot, les choix techniques, et les tests réalisés avant l'événement. 
+                            <br><br>
+                            Ces ressources sont une véritable mine d'informations pour mieux comprendre les défis relevés et les solutions apportées, offrant ainsi un aperçu complet des projets réalisés.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/concours.png" alt="Conception du robot">
+                            <figcaption>Onglets Concours dans Projets</figcaption>
+                        </figure>
+                    </div>
+                    <div class="button-container">
+                        <a href="../../Concours/FANUC_CN_BUT2/Fanuc_2.html" target="_blank">Olympiades FANUC BUT2</a>
+                        <a href="../../Concours/Cachan/Cachan.html" target="_blank">Concours Robotique Cachan</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Stage</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                        Ce stage a été une expérience extrêmement formatrice sur les plans technique, 
+                        méthodologique et humain. <br><br>
+                        J’ai pu : <br>
+                        - Découvrir le fonctionnement réel d’un laboratoire de recherche universitaire <br>
+                        - Approfondir mes compétences en programmation industrielle et embarquée <br>
+                        - Travailler en équipe dans un contexte de compétition <br>
+                        - Documenter un projet de manière professionnelle pour en assurer la pérennité
+                        <br><br>
+                        Participer à deux concours de robotique dans un même stage m’a permis de comprendre les différences 
+                        entre la robotique industrielle et la robotique mobile embarquée, deux univers passionnants 
+                        que je souhaite continuer à explorer dans mon parcours professionnel.
+                        </p>
+                    <figure class="Image_final">
+                        <img src="photos/Evry2.jpg" alt="Robot finalisé">
+                        <figcaption>IUT Evry Site Pelvoux (91)</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/TOURAIS.rapport.pdf" target="_blank">Lien vers le rapport de stage</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+    
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

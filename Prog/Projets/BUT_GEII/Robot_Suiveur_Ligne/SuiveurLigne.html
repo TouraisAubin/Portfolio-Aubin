@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>ROBOT SUIVEUR DE LIGNE</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+             <!-- SECTION : LE SUJET -->
+             <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">                 
+                    <p><strong>Objectif :</strong><br> 
+                        Durant cette SAÉ, nous avons réalisé un projet de robot suiveur de ligne en binôme. 
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        Ce robot est conçu pour suivre une ligne noire tracée sur le sol grâce à deux capteurs de ligne placés sous le robot. 
+                        <br><br>
+                        L'objectif principal est de concevoir un robot capable de détecter la ligne et de s'ajuster pour la suivre de manière autonome, même lorsqu'il rencontre des courbes ou des intersections. 
+                        <br><br> 
+
+                        <strong>Cahier des charges :</strong><br> 
+                        Le robot doit se déplacer en suivant la ligne noire et ajuster sa direction pour rester aligné avec la trajectoire.
+                    </p>
+                    <figure class="Sujet_image">
+                        <img src="photos/Plaque.png" alt="Robot POB">
+                        <figcaption>Robot suiveur de ligne.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Schéma Fonctionnel</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Schéma fonctionnel :</strong><br>
+                            Le schéma fonctionnel présente les différentes étapes et composants qui 
+                            interviennent dans le fonctionnement du robot.
+                            <br><br>
+
+                            <strong>Capteurs de ligne :</strong><br>
+                            Ces capteurs sont placés sous le robot et détectent la 
+                            ligne noire sur un fond clair ou vice versa.
+                            <br><br>
+
+                            <strong>Moteurs :</strong><br>
+                            En fonction des informations reçues du contrôleur, 
+                            les moteurs du robot sont activés pour déplacer le robot vers gauche, vers droite, ou tout droit.
+                            <br><br>
+
+                            Le schéma illustre la relation entre ces composants et leur interaction pour assurer le suivi de la ligne.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/SchemaFonctionnel.png" alt="Conception du robot">
+                            <figcaption>Schéma fonctionnel du robot suiveur de ligne.</figcaption>
+                       </figure>
+                    </div>
+
+                    <h2>Étape 2 : Schématisation</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Schéma électrique :</strong><br>
+                            Le schéma électrique représente les connexions entre les différents composants du robot.
+                            <br><br>
+
+                            <strong>Description :</strong><br>
+                            Il détaille comment les capteurs de ligne, les moteurs et le microcontrôleur 
+                            sont reliés entre eux et à l'alimentation.
+                            <br><br>
+
+                            <strong>Exemples de connexions :</strong><br>
+                            - Les capteurs de ligne sont connectés aux entrées analogiques du microcontrôleur.
+                            <br><br>
+
+                            - Les moteurs sont pilotés par des contrôleurs de moteur (drivers) connectés aux sorties du microcontrôleur.
+                            <br><br>
+
+                            - L’alimentation fournit l’énergie au microcontrôleur et aux moteurs, souvent via 
+                            un circuit de régulation pour fournir la tension nécessaire.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Schema.png" alt="Conception du robot">
+                            <figcaption>Schéma électrique du robot suiveur de ligne.</figcaption>
+                       </figure>
+                    </div>
+
+                    <h2>Étape 3 : Table de Vérité</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Table de vérité :</strong><br>
+                            La table de vérité définit les conditions de fonctionnement du 
+                            robot en fonction des entrées des capteurs de ligne.
+                            <br><br>
+
+                            <strong>Description :</strong><br>
+                            Elle décrit les actions que le robot doit entreprendre 
+                            selon les différents états détectés par les capteurs.
+                            <br><br>
+
+                            <strong>Contenu :</strong><br>
+                            Vous y retrouverez toutes les combinaisons possibles
+                            des capteurs et les actions correspondantes, permettant
+                            ainsi de comprendre le comportement attendu du robot dans
+                            diverses situations.
+                            <br><br>
+
+                            Cette table est essentielle pour la programmation du robot
+                            et assure que celui-ci réagira de manière adéquate face aux
+                            différentes configurations rencontrées sur la ligne.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Table.png" alt="Conception du robot">
+                            <figcaption>Table de vérité du fonctionnement de chaque moteur.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Tableau de karnaugh</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Table de Karnaugh :</strong><br>
+                            La table de Karnaugh est utilisée pour simplifier les 
+                            expressions logiques qui déterminent le comportement du robot 
+                            en fonction des entrées des capteurs.
+                            <br><br>
+
+                            <strong>Objectif :</strong><br>
+                            Elle permet de réduire la complexité de la logique nécessaire 
+                            pour contrôler les moteurs du robot.
+                            <br><br>
+
+                            Par exemple, en partant de la table de vérité ci-dessus, on 
+                            pourrait simplifier les expressions logiques des moteurs en une forme plus optimisée.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Karnaugh.png" alt="Conception du robot">
+                            <figcaption>Simplification des expressions via tableau de Karnaugh.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Bilan - Nomenclature & Coûts</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Nomenclature :</strong><br>
+                            La nomenclature présente l'ensemble des composants nécessaires 
+                            à la réalisation du robot suiveur de ligne.
+                            <br><br>
+
+                            <strong>Contenu :</strong><br>
+                            Vous y trouverez une liste détaillée de tous les éléments essentiels 
+                            à la construction du robot, incluant le microcontrôleur, les capteurs,
+                            et les autres composants électroniques.
+                            <br><br>
+
+                            <strong>Coût :</strong><br>
+                            Chaque élément est accompagné de son coût approximatif, pour permettre une estimation du 
+                            budget global du projet.
+                            <br><br>
+
+                            Cette nomenclature permet également de vérifier les quantités nécessaires 
+                            et d'assurer que tous les éléments sont disponibles avant de commencer 
+                            la construction du robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Nomenclature.png" alt="Conception du robot">
+                            <figcaption>Nomenclature de l'ensemble des composants.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>Le projet de robot suiveur de ligne offre une excellente occasion 
+                    de travailler sur un système autonome simple mais efficace. 
+                    <br><br>
+
+                    En combinant les capteurs, le traitement des données par un microcontrôleur 
+                    et le contrôle des moteurs, ce projet permet de comprendre 
+                    les bases du contrôle en robotique. 
+                    <br><br>
+
+                    En outre, la conception et l'optimisation de l'algorithme qui régit le 
+                    comportement du robot, notamment pour les virages, sont 
+                    des défis intéressants à résoudre. 
+                    <br><br>
+
+                    En conclusion, ce projet permet de mettre en œuvre des compétences 
+                    en programmation, en électronique et en logique, et constitue
+                    un excellent point de départ pour des projets plus complexes en robotique.</p>
+                    <figure class="Image_final">
+                        <img src="photos/Plaque.png" alt="Robot POB">
+                        <figcaption>Robot suiveur de ligne fonctionnel.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Suiveur Ligne - TOURAIS et HUYNH.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+
+    <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>ROBOT STÄUBLI</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>Durant ce projet, nous avons réalisé l'assemblage complet 
+                        d'un bras robotique Stäubli TX2-40 sur une table mobile, 
+                        en intégrant différents capteurs de sécurité et une interface 
+                        logicielle via SRS (Stäubli Robotics Suite). 
+                        <br><br>
+
+                        L'objectif du projet était double : créer un environnement professionnel 
+                        sécurisé et fonctionnel tout en concevant un outil pédagogique 
+                        permettant de mettre en valeur les capacités du robot. 
+                        <br><br>
+
+                        Nous avons géré l'ensemble du processus, de l'installation physique du 
+                        robot et de son contrôleur CS9, jusqu'à l'intégration d'un scanner 
+                        laser et d'un détecteur de porte qui assurent la décélération ou l'arrêt 
+                        du robot en cas d'obstacle. 
+                        <br><br>
+
+                        De plus, nous avons conçu un support de stylo à l'aide de la modélisation 
+                        3D sur Fusion 360, essentiel pour les exercices d'écriture automatisée. <br><br>
+                        Un programme sophistiqué a été développé pour contrôler le robot,
+                        avec des mouvements précis, des opérations de prise et de dépose, 
+                        et même la capacité d'écrire des lettres et des chiffres.
+                    </p>                 
+                    <figure class="Sujet_image">
+                        <img src="photos/robot.jpg" alt="Robot POB">
+                        <figcaption>Robot Stäubli - TX2-40.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Logiciel SRS</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Utiliser l'interface logicielle SRS pour contrôler et programmer 
+                            le robot Stäubli TX2-40. 
+                            <br><br> 
+
+                            <strong>Installation et Configuration :</strong><br> 
+                            L'installation de l'interface SRS a permis de configurer et de 
+                            contrôler le robot à travers une plateforme intuitive et performante.
+                            <br> <br>
+                            Nous avons assuré la liaison entre le robot et le logiciel pour 
+                            une communication fluide. 
+                            <br><br> 
+
+                            <strong>Programmation avec SRS :</strong><br> 
+                            Le programme a été créé pour gérer le robot et ses différents mouvements, 
+                            incluant des actions de prise et de dépose d'objets ainsi que 
+                            des mouvements d'écriture automatisée.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/SRS.png" alt="Conception du robot">
+                            <figcaption>Logiciel SRS - Jumeau numérique TX2-40.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Ajout de capteurs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Intégrer des capteurs de sécurité et de détection au robot pour 
+                            assurer un environnement de travail sécurisé. 
+                            <br><br> 
+
+                            <strong>Capteurs de Sécurité :</strong><br> 
+                            Nous avons ajouté un scanner laser et un détecteur de porte pour 
+                            détecter les obstacles autour du robot et arrêter son mouvement 
+                            si nécessaire.
+                             <br><br>
+                            Ces capteurs permettent de garantir une sécurité 
+                            maximale tout en maintenant une performance optimale du robot. 
+                            <br><br> 
+
+                            <strong>Test des Capteurs :</strong><br> 
+                            Nous avons testé l'efficacité des capteurs dans des situations
+                            variées pour garantir que le robot s'arrête correctement lorsqu'un 
+                            obstacle est détecté.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/SchemaCapteurs.png" alt="Conception du robot">
+                            <figcaption>Schéma de câblage des capteurs externes.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Armoire Électrique</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Mettre en place une armoire électrique pour alimenter et contrôler 
+                            l'ensemble des composants du robot.
+                            <br><br> 
+                            <strong>Composants de l'Armoire :</strong><br> 
+                            L'armoire contient tous les éléments nécessaires pour alimenter 
+                            et contrôler le robot, y compris les moteurs, capteurs, et autres 
+                            composants électroniques. 
+                            <br><br>
+                            Elle assure une gestion sécurisée de l'alimentation et permet d'éviter 
+                            les courts-circuits et autres risques électriques. 
+                            <br><br> 
+
+                            <strong>Contrôle de l'Armoire :</strong><br> 
+                            Nous avons intégré des systèmes de sécurité dans l'armoire pour 
+                            prévenir les risques et garantir la sécurité des utilisateurs 
+                            lors de l'opération du robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Armoire.png" alt="Conception du robot">
+                            <figcaption>Connexions des capteurs - Armoire électrique.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Programmation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Élaborer un programme de contrôle sophistiqué pour le robot, 
+                            permettant une utilisation variée dans un contexte pédagogique. 
+                            <br><br> 
+
+                            <strong>Mouvements Précis :</strong><br> 
+                            Le programme inclut des mouvements précis, comme des opérations 
+                            de prise et de dépose, ainsi que la capacité d'écrire des lettres et 
+                            des chiffres sur une surface. 
+                            <br><br>
+                            Ces fonctionnalités permettent au robot d'être utilisé dans des 
+                            exercices d'écriture automatisée. 
+                            <br><br> 
+
+                            <strong>Gestion des Sécurités :</strong><br> 
+                            Les capteurs de sécurité ont été intégrés au programme pour activer 
+                            des actions de décélération ou d'arrêt du robot en cas d'obstacle détecté.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Programmation.png" alt="Conception du robot">
+                            <figcaption>Programme simple - Pick and Place sur TX2-40.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : IHM (Interface Homme-Machine)</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Concevoir et développer une interface homme-machine (IHM) 
+                            permettant de piloter et de contrôler facilement le robot. 
+                            <br><br> 
+
+                            <strong>Interface de Contrôle :</strong><br> 
+                            L'IHM permet à l'utilisateur de contrôler les mouvements du robot, 
+                            de programmer des tâches spécifiques et d'accéder à des fonctionnalités 
+                            comme l'écriture automatisée.
+                            <br><br>
+                            Elle est conçue pour être simple et accessible aux utilisateurs, 
+                            notamment dans un cadre pédagogique. 
+                            <br><br> 
+
+                            <strong>Interaction avec l'utilisateur :</strong><br> 
+                            L'interface permet aussi d'afficher des informations sur l'état 
+                            du robot, ses positions et les tâches en cours.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/IHM.png" alt="Conception du robot">
+                            <figcaption>Interface Homme Machine du TX2-40.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Démonstration</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Montrer les capacités du robot dans un contexte réel d'utilisation. 
+                            <br><br> 
+
+                            <strong>Exécution des Tâches :</strong><br> 
+                            Lors de la démonstration, nous avons montré comment le robot 
+                            pouvait réaliser des tâches précises comme l'écriture de lettres 
+                            et de chiffres, tout en respectant les consignes de sécurité grâce 
+                            aux capteurs intégrés. 
+                            <br><br> 
+
+                            <strong>Validation du Fonctionnement :</strong><br> 
+                            La démonstration a permis de valider la bonne intégration des 
+                            capteurs et la précision des mouvements du robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Demo.png" alt="Conception du robot">
+                            <figcaption>Présentation avec démo du programme en cours.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, ce projet nous a permis de développer des compétences 
+                        approfondies en automatisation, en programmation de robots et en intégration 
+                        de systèmes de sécurité.
+                        <br><br>
+                        Grâce à la mise en place de l'armoire électrique, de l'interface SRS, 
+                        des capteurs et du programme sophistiqué, nous avons conçu un environnement 
+                        sécurisé et fonctionnel pour le robot. 
+                        <br><br>
+                        Ce projet a également une dimension pédagogique importante, 
+                        avec la création d'un outil permettant aux étudiants de se familiariser
+                        avec les concepts de la robotique et de l'automatisation. 
+                        <br><br>
+                        Enfin, la démonstration du robot a mis en évidence la précision de 
+                        ses mouvements et sa capacité à accomplir des tâches complexes dans un 
+                        environnement sécurisé.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Nous.png" alt="Robot finalisé">
+                        <figcaption>Equipe de travail BUT3 sur le projet Stäubli.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Staubli.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

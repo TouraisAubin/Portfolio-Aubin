@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>PENDU EN C</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        <strong>Présentation du projet :</strong><br>
+                        Le projet du jeu du Pendu en C a été développé par l'équipe « Ekip ». 
+                        <br><br>
+
+                        Il s'agit d'une version simple et interactive du jeu du Pendu où le joueur doit deviner 
+                        un mot parmi plusieurs options en proposant des lettres. 
+                        <br><br>
+
+                        <strong>Fonctionnalités du jeu :</strong><br>
+                        Ce jeu est conçu pour être individuel, avec un total de 20 mots répartis sur 4 thèmes différents, 
+                        offrant ainsi une expérience variée.
+                        <br><br> 
+
+                        <strong>Objectif pédagogique :</strong><br>
+                        L'objectif de ce projet était de créer un jeu éducatif et divertissant, 
+                        tout en mettant en pratique les compétences en programmation en C. 
+                        <br><br>
+
+                        <strong>Personnalisation :</strong><br>
+                        Nous avons également veillé à rendre le jeu facilement personnalisable, 
+                        permettant d'ajouter ou de modifier les mots à deviner, ainsi que de 
+                        personnaliser certains éléments en fonction des préférences du joueur. 
+                        <br><br>
+
+                        <strong>Travail en équipe :</strong><br>
+                        Ce projet a permis à notre équipe de mettre en pratique l'organisation et 
+                        la répartition des tâches pour mener à bien le développement d'un jeu simple mais complet.
+                    </p>            
+                    <figure class="Sujet_image">
+                        <img src="photos/Jeu.png" alt="Robot POB">
+                        <figcaption>Le jeu du Pendu.</figcaption>
+                   </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Organigramme</h2>
+                    <div class="Etape">
+                        <p>L'organigramme ci-dessous illustre le fonctionnement de notre 
+                        jeu et la manière dont chaque composant interagit pour assurer l'exécution correcte du jeu du Pendu. 
+                        <br><br>
+                        Chaque fonction joue un rôle précis, allant de la gestion des entrées utilisateur 
+                        à la validation des réponses et à l'affichage des résultats.
+                        <br><br>
+                        <strong>Structure du programme :</strong><br>
+                        Chaque fonction du jeu a été soigneusement développée pour gérer les différentes 
+                        étapes : sélection d'un mot, saisie de lettres, gestion des erreurs et affichage des résultats. 
+                        <br><br>
+
+                        Le jeu est totalement jouable et peut être lancé soit via un fichier exécutable, 
+                        soit après compilation du code source.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Organigramme.png" alt="Conception du robot">
+                            <figcaption>Organigramme du jeu du Pendu.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Programmation</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Structure du code : </strong><br>
+                            Le jeu du Pendu a été programmé en C avec une structure simple et efficace.
+                            <br><br>
+
+                            <strong>Fonctionnalités principales :</strong><br>
+                            Nous avons utilisé des fonctions pour gérer l'initialisation du jeu, la saisie des lettres, 
+                            la gestion des erreurs et le calcul des scores.
+                            <br><br> 
+
+                            <strong>Organisation du code source :</strong><br>
+                            - Initialisation des mots à deviner et des thèmes<br>
+                            - Gestion de l'affichage (état du jeu, lettres devinées, erreurs, etc.)<br>
+                            - Validation des entrées utilisateur<br>
+                            - Vérification de la victoire ou de la défaite
+                            <br><br>
+
+                            Le programme est conçu pour être simple à comprendre et modifiable selon les préférences du joueur, 
+                            notamment pour l'ajout de nouveaux mots ou l'ajustement des règles du jeu.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Prog.png" alt="Conception du robot">
+                            <figcaption>Programmation et affichage du jeu.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Travail en équipe</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Travail d'équipe :</strong><br>
+                            Le développement du jeu a été réalisé en équipe sous le nom de "Ekip".
+                            <br><br>
+
+                            <strong>Répartition des tâches :</strong><br>
+                            - Un membre a travaillé sur la logique du jeu (programmation des fonctions principales).<br>
+                            - Un autre membre s'est occupé de l'interface utilisateur (affichage des mots, des erreurs, etc.).<br>
+                            - Un autre membre a vérifié la cohérence du code et effectué des tests pour s'assurer que le jeu fonctionne correctement.<br>
+                            - Un dernier membre a rédigé la documentation et les instructions d'installation pour faciliter l'utilisation du jeu.
+                            <br><br>
+
+                            Grâce à une bonne communication et à une organisation claire, nous avons pu mener à bien ce projet dans les délais.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Ekip.png" alt="Conception du robot">
+                            <figcaption>Répartition des tâches en équipe.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Jouabilité</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Lancement du jeu :</strong><br>
+                            Le jeu du Pendu est entièrement jouable dès l'exécution du fichier 
+                            <code>JEU_PENDU_EKIP.exe</code> ou après la compilation du fichier <code>JEU_PENDU_EKIP.c</code>.
+                            <br><br>
+
+                            <strong>Principe du jeu :</strong><br>
+                            Les joueurs doivent deviner un mot en proposant des lettres une à une.<br>
+                            À chaque erreur, une partie du dessin du pendu est ajoutée.<br>
+                            Le but est de deviner le mot avant que le dessin ne soit complet.
+                            <br><br>
+
+                            <strong>Règles du jeu :</strong><br>
+                            - Le joueur choisit un thème parmi les 4 proposés.<br>
+                            - Il doit deviner les mots dans un nombre limité d'essais.<br>
+                            - Le jeu s'arrête lorsque le mot est trouvé ou lorsque le joueur a épuisé tous ses essais.
+                            <br><br>
+
+                            <strong>Comment jouer :</strong><br>
+                            Pour jouer, ouvrez simplement le fichier exécutable ou compilez le fichier source en suivant les étapes indiquées dans la documentation. 
+                            Le jeu est interactif et vous permettra de tester vos compétences tout en vous amusant !
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/jouable.png" alt="Conception du robot">
+                            <figcaption>Jeu du pendu fonctionnel.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, le projet du jeu du Pendu en C a été une excellente opportunité 
+                        pour notre équipe de mettre en application nos compétences en programmation 
+                        tout en travaillant de manière collaborative.
+                        <br><br>
+                        Nous avons réussi à créer un jeu simple, fonctionnel et modifiable, 
+                        respectant les délais et répondant aux attentes initiales du projet.
+                        <br><br>
+                        Le jeu offre une expérience ludique tout en restant suffisamment flexible pour 
+                        que les joueurs puissent s’amuser avec les différents mots et thèmes proposés.
+                        <br><br>
+                        Ce projet a été enrichissant, non seulement sur le plan technique, mais aussi sur
+                        le plan du travail en équipe, nécessitant une bonne organisation afin que 
+                        chaque membre puisse apporter sa contribution de manière efficace.
+                        <br><br>
+                        Nous espérons que ce jeu du Pendu saura divertir et offrir une expérience agréable 
+                        aux utilisateurs. Nous restons ouverts à toute suggestion ou amélioration pour les futures versions.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Jeu.png" alt="Robot POB">
+                        <figcaption>Jeu entièrement fonctionnel et testé en externe.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/PENDU_BUT1/readMe.txt.txt" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

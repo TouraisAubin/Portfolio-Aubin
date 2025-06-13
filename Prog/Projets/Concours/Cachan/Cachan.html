@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>CONCOURS CACHAN BUT2 <br> ESCAPEBOT</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        La Rencontre Robotique des IUT GEII est un événement national rassemblant 
+                        des étudiants de différents départements GEII en France. 
+                        <br><br>
+                        Ce challenge leur permet d'appliquer concrètement les compétences 
+                        acquises durant leur formation en automatisme, électronique et programmation. 
+                        <br><br>
+                        L'objectif est de concevoir un robot autonome capable de remplir une 
+                        mission précise sur un terrain défini, tout en respectant un règlement 
+                        strict favorisant la compétition et l'esprit de fair-play.
+                    </p>                    
+                    <figure class="Sujet_image">
+                        <img src="photos/CahierCharge.png" alt="Robot POB">
+                        <figcaption>Concours des BUT GEII à Cachan.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Terrain</h2>
+                    <div class="Etape">
+                        <p><strong>Présentation du terrain :</strong><br><br>
+                        Le terrain est conçu pour standardiser les conditions de jeu et garantir l'équité entre les participants.<br><br>
+                        Il comporte différentes zones et obstacles que le robot devra identifier et contourner.<br><br>
+                        <strong>Les règles :</strong><br>
+                        Les règles du concours imposent des contraintes spécifiques, notamment sur les dimensions du robot, les capteurs autorisés et les comportements interdits (comme les collisions volontaires).<br><br>
+                        Le respect de ces règles est essentiel pour assurer le bon déroulement de la compétition.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Exemples.png" alt="Conception du robot">
+                            <figcaption>Terrain de jeu pour le concours.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Schéma Fonctionnel</h2>
+                    <div class="Etape">
+                        <p>Le schéma fonctionnel du robot permet de représenter les 
+                            différentes interactions entre ses composants principaux.
+                            <br><br>
+                            Il met en évidence : <br>
+                            - Les capteurs (capteur de couleurs, détecteurs d'obstacles, etc.),
+                            <br>
+                            - Le microcontrôleur, qui prend les décisions en fonction des entrées,
+                            <br>
+                            - Les actionneurs (moteurs, LED),
+                            <br>
+                            - L'alimentation électrique, qui fournit l'énergie nécessaire au fonctionnement du système.
+                            <br><br>
+                            Ce schéma sert de référence pour comprendre l’architecture générale du robot et optimiser sa conception.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/schemaFonctionnel.png" alt="Conception du robot">
+                            <figcaption>Schéma fonctionnel pour notre robot.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Table de Vérité (Programmation)</h2>
+                    <div class="Etape">
+                        <p>La programmation du robot repose sur une table de vérité, 
+                            qui définit les actions à effectuer en fonction 
+                            des signaux reçus par les capteurs. 
+                            <br><br>
+                            Ces derniers détectent les lignes du terrain, les obstacles 
+                            et éventuellement d'autres robots. 
+                            <br><br>
+                            À partir de ces entrées, le programme décide du comportement 
+                            du robot (avancer, tourner, s'arrêter). 
+                            <br><br>
+                            Une logique combinatoire et séquentielle est mise 
+                            en place pour garantir une réactivité optimale
+                            et une prise de décision rapide.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Table.png" alt="Conception du robot">
+                            <figcaption>Table de vérité pour chaque cas.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : La coque du robot (Fusion 360)</h2>
+                    <div class="Etape">
+                        <p><strong>La coque en 3D :</strong><br>
+                            La conception physique du robot passe par l'utilisation 
+                            d'outils de modélisation 3D, notamment Fusion 360. 
+                            <br><br>
+                            Ce logiciel permet de concevoir une coque adaptée
+                            aux composants électroniques et mécaniques du robot. 
+                            <br><br>
+                            L'objectif est d'assurer une bonne protection des éléments 
+                            internes tout en optimisant le poids et l'agilité du 
+                            robot sur le terrain. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Coque.png" alt="Conception du robot">
+                            <figcaption>Modélisation de la coque en 3D pour notre robot.</figcaption>
+                       </figure>
+                    </div>
+
+                    <h2>Étape 5 : Typon balise</h2>
+                    <div class="Etape">
+                        <p><strong>Typon pour la balise infrarouge :</strong><br>
+                            Le typon de la balise correspond au circuit imprimé 
+                            utilisé pour la communication ou la navigation du robot. 
+                            <br><br>
+                            Ce circuit est conçu de manière à intégrer les capteurs
+                            et les composants électroniques nécessaires à 
+                            l'interaction du robot avec son environnement. 
+                            <br><br>
+                            Il joue un rôle clé dans la réception des signaux 
+                            et l’orientation du robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/TyponEmission.png" alt="Conception du robot">
+                            <figcaption>Typon pour notre balise à infrarouge.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                        Ce projet de robotique a été une expérience enrichissante, 
+                        combinant théorie et pratique dans un cadre compétitif.
+                        <br><br>
+                        Il permet aux étudiants de développer leurs compétences 
+                        techniques en programmation, électronique et conception 
+                        mécanique, tout en apprenant à travailler en équipe.
+                        <br><br>
+                        Au-delà de la compétition, la Rencontre Robotique des IUT GEII est 
+                        aussi un moment d’échange et de partage entre passionnés 
+                        de technologie, renforçant l'esprit d'innovation et la 
+                        collaboration entre les participants.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Cachan.jpg" alt="Robot finalisé">
+                        <figcaption>Finalisations avant le passage devant les jurys.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/CR_CACHAN_TOURAIS-MOCHET.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>SAUVER BERRY</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        L’objectif du projet “Sauver BERRY” est de concevoir et réaliser un système permettant  
+                        de subvenir à tous les besoins d’un plan de fraise, en contrôlant l’humidité du sol et de l’air,  
+                        la température et l’éclairage.  
+                        <br><br>  
+                        Le système récupère les données des capteurs positionnés sur le fraisier grâce à une carte Arduino,  
+                        qui communique en réseau avec une carte Raspberry, elle-même responsable de la commande des actionneurs.  
+                        <br><br>  
+                        Le tout est piloté par un code permettant de stocker les valeurs des capteurs  
+                        pour une analyse détaillée du fraisier.  
+                        <br><br>  
+                        Enfin, les données sont affichées en temps réel sur Grafana,  
+                        avec une interface accessible via un réseau Wi-Fi alimenté par  
+                        le routeur fourni pour ce projet.
+                    </p>
+                    <figure class="Sujet_image">
+                        <img src="photos/fraise.png" alt="Robot POB">
+                        <figcaption>Plant de fraise automatisé.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Choix des Capteurs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Sélectionner les capteurs appropriés pour mesurer l’humidité du sol et
+                            de l’air, la température et l’éclairage du fraisier. 
+                            <br><br> 
+
+                            <strong>Capteurs utilisés :</strong><br> 
+                            Nous avons choisi des capteurs d’humidité, de température et de 
+                            luminosité compatibles avec la carte Arduino 
+                            pour garantir une bonne communication et un suivi précis des 
+                            conditions environnementales du fraisier. 
+                            <br><br>
+
+                            Ces capteurs sont placés directement sur les plants de fraises 
+                            pour recueillir les données en temps réel. 
+                            <br><br>
+                            <strong>Critères de sélection :</strong><br> 
+                            Les capteurs ont été choisis en fonction de leur précision, 
+                            de leur compatibilité avec la carte et de leur facilité 
+                            d’intégration dans notre système global.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Choix.png" alt="Conception du robot">
+                            <figcaption>Choix de divers capteurs pour le projet.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Programmation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Développer le code nécessaire pour récupérer les données des capteurs, 
+                            les transmettre à la carte Arduino et piloter les actionneurs. 
+                            <br><br> 
+
+                            <strong>Récupération des Données :</strong><br> 
+                            Le code permet de récupérer les valeurs des capteurs 
+                            (humidité, température et luminosité), puis de les envoyer via 
+                            la carte Arduino au serveur. 
+                            <br><br>
+                            Ce dernier traite les informations et ajuste les actionneurs 
+                            en conséquence (par exemple, l’activation de l’éclairage ou de l’irrigation). 
+                            <br><br> 
+
+                            <strong>Commande des Actionneurs :</strong><br> 
+                            En fonction des données des capteurs, le système ajuste les 
+                            paramètres environnementaux pour optimiser les conditions de 
+                            croissance du fraisier. 
+                            <br><br>
+                            Le code gère ainsi l’activation des moteurs 
+                            pour l’irrigation et les systèmes d’éclairage en temps réel.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/prog.png" alt="Conception du robot">
+                            <figcaption>Programmation sous Arduino des capteurs.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : IHM (Croquis)</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Concevoir une interface utilisateur simple et claire permettant de 
+                            visualiser les données des capteurs et d'interagir avec le système. 
+                            <br><br> 
+
+                            <strong>Croquis de l’IHM :</strong><br> 
+                            Nous avons conçu un croquis de l’IHM qui affiche les valeurs 
+                            en temps réel des différents capteurs. 
+                            <br><br>
+                            L’interface permet à l'utilisateur de voir l'état actuel de l'humidité, 
+                            de la température et de l’éclairage, ainsi que de recevoir des alertes 
+                            lorsque certaines conditions sont dépassées.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/IHM.png" alt="Conception du robot">
+                            <figcaption>Croquis d'une IHM - Relève des mesures.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : MQTT Explorer</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Utiliser le protocole MQTT pour assurer un échange fiable et en 
+                            temps réel des données des capteurs entre la carte Arduino et la Raspberry Pi. 
+                            <br><br> 
+
+                            <strong>Communication via MQTT :</strong><br> 
+                            MQTT Explorer permet de visualiser en direct les messages échangés 
+                            entre la Raspberry Pi et le routeur. 
+                            <br><br>
+                            Ce protocole joue un rôle clé dans la communication entre les différents 
+                            composants du système (capteurs, actionneurs, serveur), garantissant 
+                            une gestion optimale des données du fraisier.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/MQTT.png" alt="Conception du robot">
+                            <figcaption>Echange des données sous MQTT Explorer.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : Node-RED</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Automatiser le flux de données en temps réel et contrôler les 
+                            différentes actions du système à l'aide de Node-RED. 
+                            <br><br> 
+
+                            <strong>Automatisation des Flux :</strong><br> 
+                            Node-RED est utilisé pour automatiser la gestion des données. 
+                            <br><br>
+                            Il permet de configurer des flux qui reçoivent les informations des 
+                            capteurs et déclenchent des actions sur les actionneurs (comme l’allumage 
+                            de la lumière ou l’irrigation du sol) en fonction des seuils définis.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/NodeRed.png" alt="Conception du robot">
+                            <figcaption>Gestion des données sous Node-Red.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : InfluxDB</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Stocker les données des capteurs dans une base temporelle 
+                            pour permettre une analyse détaillée et historique des conditions environnementales. 
+                            <br><br> 
+
+                            <strong>Stockage des données :</strong><br> 
+                            InfluxDB est utilisé pour conserver chronologiquement les valeurs 
+                            collectées par les capteurs. 
+                            <br><br>
+                            Cela facilite la consultation de l’historique des mesures, la détection 
+                            de tendances, ainsi que l’analyse des conditions spécifiques sur le long terme.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/InfluxDB.png" alt="Conception du robot">
+                            <figcaption>Stockage des données sous InfluxDB.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 7 : Grafana</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>  
+                        Afficher en temps réel les données collectées sur une interface graphique via Grafana.  
+                        <br><br>  
+
+                        <strong>Affichage des données :</strong><br>  
+                        Grafana est utilisé pour afficher des graphiques en temps réel représentant 
+                        différentes mesures (humidité, température, luminosité).  
+                        <br><br>  
+                        L’utilisateur peut ainsi consulter d’un coup d’œil l’état actuel de son fraisier 
+                        et ajuster les paramètres si nécessaire.  
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Grafana.png" alt="Conception du robot">
+                            <figcaption>Affichag des données sous Grafana.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, le projet “Sauver BERRY” a permis de créer un système 
+                    automatisé pour surveiller et optimiser les conditions de culture 
+                    des fraisiers. 
+                    <br><br>
+                    Grâce à l’utilisation de capteurs précis et de 
+                    technologies telles que MQTT, Node-RED, InfluxDB et Grafana, 
+                    nous avons pu mettre en place un système complet et fonctionnel.
+                    <br><br>
+                    Ce projet démontre comment la technologie peut être utilisée pour 
+                    améliorer la gestion des cultures et faciliter l’analyse de l’environnement 
+                    en temps réel. 
+                    <br><br>
+                    De plus, l’interface graphique de Grafana permet une interaction 
+                    simple et efficace pour l’utilisateur, assurant une gestion optimale 
+                    des conditions de culture du fraisier.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/fraise.png" alt="Robot POB">
+                        <figcaption>Automatisation d'un plant de fraise.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Projet SAUVER BERRY_TOURAIS-DIEGUEZ.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>
+

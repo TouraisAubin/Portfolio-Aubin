@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+       <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+
+    <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>ROBOT SUMO POB</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>
+                        Le projet de robot sumo POB est une aventure fascinante qui combine robotique, programmation et stratégie. 
+                        <br><br>
+
+                        L'objectif principal est de concevoir un robot capable de détecter son adversaire et de le 
+                        pousser hors du ring tout en évitant de sortir soi-même. 
+                        <br><br>
+
+                        Ce défi technique nécessite l'intégration de différents composants comme des moteurs, 
+                        des capteurs et un système de programmation réfléchi pour contrôler les actions du robot. 
+                        <br><br>
+
+                        Au travers de ce projet, nous allons explorer chaque étape de la conception, 
+                        depuis la planification jusqu'aux tests en compétition, tout en mettant l'accent sur 
+                        l'optimisation des performances du robot.
+                    </p>                    
+                    <figure class="Sujet_image">
+                        <img src="photos/pob.jpg" alt="Robot POB">
+                        <figcaption>Robot Sumo POB.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Plannification</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Concevoir un robot sumo capable de détecter et d'affronter un adversaire sur un ring.
+                            <br><br>
+                            
+                            <strong>Étude des besoins :</strong><br>
+                            Définir les objectifs du robot (se déplacer, détecter l'adversaire, le pousser hors du ring).
+                            <br><br>
+                            
+                            <strong>Choix des composants :</strong><br>
+                            Sélectionner les moteurs, capteurs (ultrason, infrarouge, etc.) et la carte de contrôle.
+                            <br><br>
+                            
+                            <strong>Prise en main du logiciel :</strong><br>
+                            Prendre en main le logiciel pour la programmation en C sur POB TOOL 4.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/opti.png" alt="Conception du robot">
+                            <figcaption>Prise en main du robot sumo POB.</figcaption>
+                        </figure>
+                    </div>
+
+
+                    <h2>Étape 2 : Création de l'Organigramme</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Organiser logiquement les actions du robot pour qu'il réagisse correctement.
+                            <br><br>
+                            
+                            <strong>Définition des actions :</strong><br>
+                            Créer une séquence d'actions pour le robot, comme : se déplacer, 
+                            détecter l’adversaire, le pousser.
+                            <br><br>
+                            
+                            <strong>Logique de décision :</strong><br>
+                            Utiliser des conditions pour déterminer quand détecter l'adversaire 
+                            et quand foncer vers lui.
+                            <br><br>
+                            
+                            <strong>Boucles et répétitions :</strong><br>
+                            Définir des boucles pour les déplacements constants et les actions 
+                            répétitives, comme la détection continue.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/algo.png" alt="Conception du robot">
+                            <figcaption>Organigramme de la stratégie établie.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Choix et Installation des Capteurs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Intégrer des capteurs pour que le robot puisse détecter son environnement et réagir.
+                            <br><br>
+                            
+                            <strong>Capteur de distance :</strong><br>
+                            Utiliser des capteurs à ultrasons pour détecter la distance entre le robot et l’adversaire.
+                            <br><br>
+                            
+                            <strong>Capteur de ligne :</strong><br>
+                            Placer des capteurs au sol pour détecter les limites du ring et éviter que le robot ne tombe.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Capteur.png" alt="Conception du robot">
+                            <figcaption>Montage des capteurs sur le robot POB.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Programmation du Robot</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Implémenter l'algorithme dans un langage de programmation pour contrôler le robot.
+                            <br><br>
+                            
+                            <strong>Configuration des moteurs :</strong><br>
+                            Programmer les moteurs pour qu’ils répondent aux commandes de direction, de vitesse et d'orientation.
+                            <br><br>
+                            
+                            <strong>Détection et réaction :</strong><br>
+                            Coder la logique de détection de l'adversaire à l’aide des capteurs.                           
+                            <br><br>
+                            
+                            <strong>Test et ajustement :</strong><br>
+                            Tester le robot dans un environnement contrôlé pour ajuster les paramètres de détection et de mouvement.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/code.png" alt="Conception du robot">
+                            <figcaption>Programmation direct du robot sumo POB.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : Assemblage du Robot</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>
+                            Assembler les différentes pièces et composants.
+                            <br><br>
+                            
+                            <strong>Montage des moteurs et capteurs :</strong><br>
+                            Fixer les moteurs, les capteurs et le microcontrôleur sur le châssis.
+                            <br><br>
+                            
+                            <strong>Câblage :</strong><br>
+                            Relier correctement tous les composants électriques (moteurs, capteurs, carte de contrôle).
+                            <br><br>
+                            
+                            <strong>Test d’assemblage :</strong><br>
+                            Vérifier que tout fonctionne avant d’allumer le robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/robot.png" alt="Conception du robot">
+                            <figcaption>Assemblage complet du robot sumo POB.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Tests et Optimisation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong> <br>
+                            Tester le robot en conditions réelles et optimiser ses performances.
+                            <br><br>
+                            
+                            <strong>Tests sur un ring de sumo :</strong> <br>
+                            Tester le robot dans un environnement de compétition avec un autre robot pour observer ses comportements.
+                            <br><br>
+                            
+                            <strong>Ajustement des performances  : </strong><br>
+                            Modifier la programmation ou les capteurs pour améliorer les performances (réactivité, précision de détection, etc.).
+                            <br><br>
+                            
+                            <strong>Améliorations :</strong> <br>
+                            Envisager des ajouts comme des moteurs plus puissants ou une meilleure gestion de l’énergie.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/planification.png" alt="Conception du robot">
+                            <figcaption>Test de la stratégie pour renverser l'adversaire.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 7 : Compétition et Retour d'Expérience</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong> <br>
+                            Tester le robot dans une compétition réelle et recueillir des retours pour des améliorations futures.
+                            <br><br>
+                            
+                            <strong>Participation à une compétition :</strong> <br>
+                            Participer à des matchs de robot sumo pour mesurer les performances du robot.
+                            <br><br>
+                            
+                            <strong>Analyse des résultats  :</strong> <br>
+                            Analyser les forces et les faiblesses du robot suite à la compétition pour de futures améliorations.
+                            <br><br>
+                            
+                            <strong>Feedback et itérations :</strong> <br>
+                            Utiliser les retours des autres compétiteurs pour effectuer des améliorations sur la conception et la programmation du robot.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/concours.png" alt="Conception du robot">
+                            <figcaption>Technique pour vaincre l'adversaire.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>
+                        En conclusion, la création d'un robot sumo POB est un excellent moyen d'appliquer des concepts de robotique 
+                        et de programmation dans un contexte pratique et compétitif. 
+                        <br><br>
+
+                        Grâce à une planification minutieuse, une programmation précise et l'utilisation de capteurs adaptés, 
+                        nous avons pu développer un robot capable de rivaliser dans une compétition de robot sumo. 
+                        <br><br>
+
+                        Ce projet a permis de démontrer l'importance de l'itération, des tests et des ajustements en cours 
+                        de développement. 
+                        <br><br>
+
+                        En continuant à améliorer nos compétences et en utilisant les retours d'expérience de la compétition, 
+                        nous pourrons créer des robots encore plus performants et perfectionner notre approche en robotique.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/pob.jpg" alt="Robot POB">
+                            <figcaption>Robot sumo POB prêt pour la bataille.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport_SAE5_TOURAIS_Aubin-FELLAH_Nicolas-DIEGUEZ_Melchior.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

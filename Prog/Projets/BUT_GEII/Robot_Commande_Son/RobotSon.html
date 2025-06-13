@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+
+     <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>ROBOT COMMANDE <br>PAR LE SON</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">                 
+                    <p><strong>Objectif :</strong><br> 
+                        L'objectif principal est de concevoir un robot capable de détecter 
+                        un bruit sec, comme un claquement de mains, et de changer 
+                        de direction en fonction du bruit perçu. 
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        Ce robot dispose de deux moteurs à courant continu, 
+                        un pour chaque roue, permettant de le déplacer. 
+                        <br><br>
+
+                        La vitesse et la direction du robot sont contrôlées par des 
+                        hacheurs qui régulent la tension appliquée aux moteurs.
+                        <br><br>
+
+                        <strong>Cahier des charges :</strong><br> 
+                        Le robot se déplace en ligne droite par défaut et modifie sa 
+                        trajectoire vers la droite lorsqu'il entend un bruit. 
+                    </p>
+                    <figure class="Sujet_image">
+                        <img src="photos/robot.jpg" alt="Robot POB">
+                        <figcaption>Robot commandé par le son.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Schéma Fonctionnel</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Définir le fonctionnement global du robot en fonction des entrées 
+                            et des sorties. 
+                            <br><br> 
+
+                            <strong>Fonctionnement du robot :</strong><br> 
+                            Lorsque le robot ne détecte pas de bruit, les moteurs tournent 
+                            à une vitesse constante, permettant au robot de se déplacer en ligne droite.
+                            <br><br>
+                            Lorsqu'un bruit est détecté, le robot change de direction vers la droite. 
+                            <br><br>
+
+                            <strong>Gestion des vitesses :</strong><br> 
+                            La vitesse du robot sera modulée en fonction du rapport cyclique 
+                            des hacheurs (entre 55% et 95%). 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/SchemaFonctionnel.png" alt="Conception du robot">
+                            <figcaption>Schéma fonctionnel du robot commandé par le son.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Schématisation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Concevoir un schéma du circuit du robot commandé par le son, 
+                            en définissant les composants nécessaires et leur interconnexion. 
+                            <br><br> 
+
+                            <strong>Étude des besoins :</strong><br> 
+                            Représenter les composants comme les moteurs, les hacheurs, 
+                            le monostable et les capteurs de bruit. 
+                            <br><br> 
+
+                            <strong>Choix des composants :</strong><br> 
+                            Sélectionner les composants appropriés en fonction des spécifications 
+                            du cahier des charges et du schéma de circuit à concevoir. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Schema.png" alt="Conception du robot">
+                            <figcaption>Schéma électrique du robot commandé par le son.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Calculs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Calculer les paramètres nécessaires pour le bon fonctionnement du robot 
+                            (vitesse, rapport cyclique, fréquence de commutation). 
+                            <br><br> 
+
+                            <strong>Calcul de la vitesse :</strong><br>
+                            Utiliser la formule de vitesse de rotation pour chaque moteur 
+                            et ajuster la tension d'alimentation pour atteindre la vitesse souhaitée. 
+                            <br><br> 
+
+                            <strong>Calcul du rapport cyclique :</strong><br> 
+                            Déterminer la plage de rapport cyclique (α) entre 0,55 et 0,95 
+                            pour contrôler la vitesse des moteurs, en tenant compte de 
+                            la tension de commande. 
+                        </p>
+
+                        <figure class="Exemple_image">
+                            <img src="photos/Calcul.jpg" alt="Conception du robot">
+                            <figcaption>Quelques calculs pour déterminé la vitesse du robot.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Montage des composants</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Implémenter le circuit sur une plaque à trous reliée aux moteurs. 
+                            <br><br> 
+
+                            <strong>Répartition des composants :</strong><br> 
+                            Placer tous les composants sur la plaque à trous, en tenant compte 
+                            des contraintes de câblage et d’espace. 
+                            <br><br> 
+
+                            <strong>Test de fonctionnement :</strong><br> 
+                            Vérifier le fonctionnement du circuit monté sur la plaque à trous, 
+                            s’assurer que le robot réagit correctement aux signaux sonores et que 
+                            les moteurs tournent comme prévu. 
+                        </p>
+
+                        <figure class="Exemple_image">
+                            <img src="photos/Plaque.png" alt="Conception du robot">
+                            <figcaption>Montage des composants sur plaque à trous.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : Prise de Mesures à l'Oscilloscope</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Vérifier les signaux de commande envoyés aux moteurs et mesurer la réponse du robot. 
+                            <br><br> 
+
+                            <strong>Prise de mesures :</strong><br> 
+                            Utiliser un oscilloscope pour observer les formes d’onde 
+                            des signaux envoyés aux moteurs et au capteur de bruit. 
+                            <br><br> 
+
+                            Cette opération permet de contrôler la qualité des signaux et 
+                            d’ajuster, si nécessaire, les paramètres du hacheur. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Oscillo.png" alt="Conception du robot">
+                            <figcaption>Mesures sur oscilloscope du comportement du robot.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Bilan - Nomenclature & Coûts</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Lister les composants utilisés dans le projet et estimer leur coût. 
+                            <br><br> 
+
+                            <strong>Composants principaux :</strong><br> 
+                            Transistors, condensateurs, NE555, microphone, potentiomètres, diodes. 
+                            <br><br> 
+
+                            <strong>Rôle de chaque composant :</strong><br> 
+                            Les moteurs assurent le déplacement du robot, le monostable contrôle 
+                            la commande des moteurs en fonction des sons détectés, 
+                            et les hacheurs régulent la vitesse des moteurs. 
+                            <br><br> 
+
+                            <strong>Estimation des coûts :</strong><br> 
+                            Analyser les prix des composants afin de respecter le budget alloué au projet. 
+                        </p>
+
+                        <figure class="Exemple_image">
+                            <img src="photos/Nomeclature&Cout.png" alt="Conception du robot">
+                            <figcaption>Nomenclature de l'ensemble des composants.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, la création d’un robot commandé par le son est un 
+                        projet qui combine des concepts d’électronique et de traitement du 
+                        signal pour concevoir un robot capable de réagir à un bruit spécifique.
+                        <br><br>
+
+                        Ce projet a mis en évidence l’importance de la gestion en temps réel 
+                        de la vitesse et de la direction d’un robot.
+                        <br><br>
+                    
+                        Grâce à l’utilisation de capteurs, de hacheurs et à la commande
+                        des moteurs, nous avons pu réaliser un robot réactif et adaptable.
+                        <br><br>
+
+                        Les différentes étapes de conception, de tests et d’optimisation 
+                        ont permis de perfectionner le système et d’assurer son bon fonctionnement.
+                        <br><br>
+
+                        Le travail accompli illustre parfaitement l’interaction entre le son 
+                        et l’électronique, ouvrant la voie à de futures améliorations pour rendre le 
+                        robot encore plus performant.
+                    </p>
+
+                    <figure class="Image_final">
+                        <img src="photos/robot.jpg" alt="Robot POB">
+                        <figcaption>Robot commandé par le son fonctionnel.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Robot Son - TOURAIS et HUYNH.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

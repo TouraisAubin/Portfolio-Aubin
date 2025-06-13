@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aubin Tourais - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- EN-TÊTE -->
+        <header>
+        <div class="logo">
+            <h1>Portfolio - Aubin</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="../Accueil/index.html">Accueil</a></li>
+                <li class="projets">
+                    <a href="../Projets/Projets.html">Projets</a>
+                    <ul class="dropdown">
+                        <li><a href="../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                        <li><a href="../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                        <li><a href="../Projets/Projets.html#Concours">Concours</a></li>
+                        <li><a href="../Projets/Projets.html#Stages">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="Moi">
+                    <a href="../Moi/Moi.html">Moi</a>
+                    <ul class="dropdown">
+                        <li><a href="../Moi/Moi.html#Aubin">Présentation</a></li>
+                        <li><a href="../Moi/Moi.html#MonCV">Mon CV</a></li>
+                        <li><a href="../Moi/Moi.html#MonCV_Video">Mon CV VIDÉO</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Contact/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <!-- SECTION HERO -->
+        <div class="hero">
+            <div class="background-text">AUBIN</div>
+            <div class="content">
+                <div class="text">
+                    <h2>AUBIN TOURAIS</h2>
+                    <h1>Un passionné par la nouvelle technologie</h1>
+                    <p>
+                        Curieux et motivé, je cherche sans cesse à découvrir, <br>
+                        expérimenter et évoluer dans des domaines qui me passionnent. <br><br>
+                        J'aime apprendre de nouvelles choses, <br>
+                        relever des défis et participer à divers concours.
+                    </p>
+                    <div class="buttons">
+                    <a href="../Projets/Projets.html" class="btn primary">Voir mes projets</a>
+                    <a href="../Moi/Moi.html" class="btn secondary">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../../Pictures/MOI.jpg" alt="Photo d'Aubin" />
+                </div>
+            </div>
+        </div>
+        <div class="background-text typewriter">AUBIN</div>
+
+        <!-- Bandeau défilant -->
+        <div class="marquee">
+            <p>Portfolio de Bainbain • Passionné de technologie, de robotique et d'informatique •  Toujours prêt à innover •</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- SECTION À PROPOS -->
+        <section id="about" class="about-section">
+        <h2>À propos</h2>
+        <p>
+            Passionné par la technologie de pointe, la robotique avancée et le design innovant,
+            je fais de mon mieux pour repousser mes limites dans l'univers du numérique. <br><br>
+            Mon ambition est de créer des expériences immersives, mêlant performance, esthétique 
+            et solutions intelligentes pour un futur proche et dans le monde de demain.<br><br>
+            Curieux et toujours en quête de savoir, je cherche à allier créativité et rigueur technique,
+            pour façonner des projets à la fois fonctionnels et innovants.
+        </p>
+        </section>
+
+
+        <!-- SECTION PROJETS -->
+        <section id="projects">
+            <div class="project-card" class="left">
+                <h3>Projet Robotique</h3>
+                <p>Modélisation et commande d’un robot industriel avec interface Octave/MATLAB.</p>
+            </div>
+            <div class="project-card">
+                <h3>Interface Web</h3>
+                <p>Développement d’une interface dynamique avec animations CSS futuristes.</p>
+            </div>
+            <div class="project-card" class="right">
+                <h3>Automatisation Industrielle</h3>
+                <p>Conception et simulation de processus automatisés intégrant capteurs et actionneurs.</p>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section id="highlights" class="highlights-section">
+            <h2 class="titre-atout">Mes meilleurs moments</h2>
+
+            <div class="highlight-card row">
+                <img src="../../Pictures/FANUC.JPG" alt="Victoire FANUC" />
+                <div class="highlight-text">
+                <h3>Victoire FANUC 2025</h3>
+                <p>
+                    Première place au concours FANUC Commande Numérique avec mon équipe de BUT3 GEII (IUT Evry). 
+                    Nous avons programmé une cellule robotisée pour effectuer une simulation précise et optimisée.  
+                    <br><br>Ce projet nous a appris à travailler dans des conditions industrielles réelles et à gérer les imprévus techniques avec rigueur.
+                </p>
+                </div>
+            </div>
+
+            <div class="highlight-card row-reverse">
+                <img src="../../Pictures/Cachan.jpg" alt="Concours robotique Cachan" />
+                <div class="highlight-text">
+                <h3>Concours robotique Cachan</h3>
+                <p>
+                    Participation à un concours national avec un robot autonome de type sumo. Conception mécanique, stratégie de détection d’obstacles et rapidité d’exécution étaient au cœur du défi.  
+                    <br><br>Ce projet m’a permis de renforcer mes compétences en algorithmie et systèmes embarqués.
+                </p>
+                </div>
+            </div>
+
+            <div class="highlight-card row">
+                <img src="../../Pictures/Staubli.jpg" alt="Projet Staubli" />
+                <div class="highlight-text">
+                <h3>Projet Stäubli</h3>
+                <p>
+                    Réalisation d’une simulation 3D et d’une programmation complète d’un robot industriel Stäubli TX2-40.  
+                    Mise en œuvre de la cinématique inverse, trajectoires, et sécurités logicielles pour une application de pick & place.  
+                    <br><br>Une immersion concrète dans l’univers de la robotique industrielle.
+                </p>
+                </div>
+            </div>
+
+            <div class="highlight-card row-reverse">
+                <img src="../../Pictures/EIGSI.jpg" alt="Stage EIGSI" />
+                <div class="highlight-text">
+                <h3>Stage EIGSI La Rochelle</h3>
+                <p>
+                    Stage de BUT3 à l'EIGSI dans la direction de recherche. Réalisation d’une maquette TP pour un robot 3 DOF et montage d’un robot 6 DOF avec programmation. Développement d’une simulation 3D sous Blender avec interaction dans le réel et intégration en réalité virtuelle. 
+                    <br><br>Une expérience immersive alliant conception, programmation et applications robotiques avancées.
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="skills-section">
+            <h2>Mes compétences clés</h2>
+            <div class="skills-icons">
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/robot-2.png" alt="Robotique" />
+                    <span>Robotique</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/code.png" alt="Programmation" />
+                    <span>Programmation</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/circuit.png" alt="Électronique" />
+                    <span>Électronique</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/settings.png" alt="Automatisme" />
+                    <span>Automatisme</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/project.png" alt="Gestion de projet" />
+                    <span>Gestion de projet</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/ios-filled/100/00ffff/trophy.png" alt="Concours & Compétitions" />
+                    <span>Concours & Compétitions</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="realisation-section">
+            <h2 class="titre-atout">Certains de mes Projets</h2>
+            <div class="realisation-grid">
+                
+                <div class="realisation-card">
+                    <h3>Robot Sumo POB</h3>
+                    <p>Conception et programmation d’un robot sumo autonome capable de détecter et repousser ses adversaires.</p>
+                    <a href="../Projets/BUT_GEII/Robot_Sumo_POB/POB.html" class="btn secondary">Voir plus</a>
+                </div>
+
+                <div class="realisation-card">
+                    <h3>Jeu Taquin en C</h3>
+                    <p>Implémentation du jeu du Taquin en C, où l'on déplace des cases pour réorganiser les numéros dans l'ordre.</p>
+                    <a href="../Projets/BUT_INFO/Taquin/Taquin.html" class="btn secondary">Voir plus</a>
+                </div>
+
+                <div class="realisation-card">
+                    <h3>Jumeau Numérique</h3>
+                    <p>Prototype numérique interactif en lien avec le monde réel : ajustement dynamique et suivi d’objets.</p>
+                    <a href="../Projets/BUT_GEII/Robot_Staubli/Staubli.html" class="btn secondary">Voir plus</a>
+                </div>
+            </div>
+        </section>
+
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+    
+    <canvas id="holoCanvas"></canvas>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../app.js"></script>
+</html>

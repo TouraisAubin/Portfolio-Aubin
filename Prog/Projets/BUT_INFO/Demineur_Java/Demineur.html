@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>DEMINEUR EN JAVA</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>L’objectif du projet est de réaliser une version du jeu Démineur 
+                    en utilisant le langage de programmation Java. 
+                    <br><br>
+
+                    Le jeu consiste à découvrir des cases d’une grille sans toucher les mines, 
+                    en s’aidant des indices fournis par les cases adjacentes. 
+                    <br><br>
+
+                    Le projet implique l’implémentation de la logique du jeu, 
+                    ainsi qu’une interface graphique conviviale pour interagir avec l’utilisateur.
+                    <br><br> 
+
+                    Le jeu comprend une grille où chaque case peut être vide, 
+                    contenir un nombre (indiquant combien de mines sont présentes dans 
+                    les cases adjacentes), ou être une mine.
+                    <br><br>
+
+                    L’objectif est de découvrir toutes les cases sans déclencher de mines.
+                    </p>                
+                    <figure class="Sujet_image">
+                        <img src="photos/jeu.png" alt="Robot POB">
+                        <figcaption>Le jeu du démineur.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Diagramme de classe</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Modéliser les entités et leurs relations dans le jeu à 
+                        travers un diagramme de classes.
+                        <br><br> 
+                        <strong>Description :</strong><br> 
+                        Le diagramme de classes pour le projet Démineur inclut 
+                        les classes suivantes :
+                        <br><br>
+                        1. Grille : représente la grille de jeu, avec les cases et les mines. 
+                        Cette classe gère les positions et les états des cases.
+                        <br><br>
+                        2. Case : représente une case individuelle dans la grille. 
+                        Elle peut être vide, contenir un nombre, ou être une mine. 
+                        Elle gère également l’état (découvert ou non).
+                        <br><br>
+                        3. Jeu : la classe principale qui gère la logique du jeu, 
+                        le démarrage de la partie et la détection des mines.
+                        <br><br>
+                        4. Interface utilisateur : gère l’interaction avec l'utilisateur 
+                        à travers l'interface graphique.
+                        <br><br> 
+                        Ce diagramme permet de visualiser la structure du programme 
+                        et les interactions entre les différentes classes.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/DiagrammeClasse.png" alt="Conception du robot">
+                            <figcaption>Diagramme de classe du démineur.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Interface Graphique (Menu)</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Créer une interface graphique pour l’interaction avec l'utilisateur 
+                        et rendre le jeu plus agréable.
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        L’interface graphique est réalisée en Java pour afficher 
+                        la grille de jeu, les boutons et les informations essentielles, 
+                        comme le nombre de mines restantes et le temps écoulé. 
+                        <br><br>
+                        Un menu principal permet à l’utilisateur de démarrer une nouvelle 
+                        partie, de quitter le jeu et de choisir les paramètres de difficulté.
+                        <br><br> 
+
+                        Le menu comprend :<br> 
+                        1. Bouton "Nouvelle Partie" : démarre une nouvelle partie avec 
+                        des paramètres par défaut ou ceux choisis par l’utilisateur.
+                        <br><br>
+                        2. Bouton "Quitter" : ferme l’application.
+                        <br><br> 
+
+                        L’interface graphique rend l’interaction plus intuitive et agréable 
+                        pour l’utilisateur.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Menu.png" alt="Conception du robot">
+                            <figcaption>Interface graphique du menu de notre démineur.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Programmation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Implémenter la logique du jeu et les fonctionnalités de 
+                        l’interface graphique en Java.
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        La programmation du jeu repose sur l’implémentation de la logique suivante :
+                        <br><br>
+                        1. Initialisation du jeu : lorsqu’une nouvelle partie commence, une grille 
+                        de taille choisie est générée avec des mines placées aléatoirement.
+                        <br><br>
+                        2. Découverte des cases : lorsqu’une case est cliquée, le jeu vérifie si 
+                        elle contient une mine ou affiche un nombre.
+                        <br><br>
+                        3. Gestion des mines et des indices : si une case contient une mine, la partie est terminée. 
+                        Si une case est vide, les cases adjacentes sont automatiquement découvertes.
+                        <br><br>
+                        4. Gagner ou perdre : l’utilisateur gagne si toutes les cases sans mines sont découvertes. 
+                        La partie est perdue si une mine est découverte.
+                        <br><br> 
+
+                        L’application utilise des événements pour gérer les interactions de l’utilisateur 
+                        avec la grille et les boutons.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Prog.png" alt="Conception du robot">
+                            <figcaption>Programmation en Java du jeu du démineur.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Résultat (Jeu)</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Vérifier la bonne fonctionnalité du jeu une fois programmé.
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        Le jeu fonctionne comme prévu. L’utilisateur peut démarrer une 
+                        partie avec différents niveaux de difficulté (par exemple : facile, 
+                        moyen, difficile) et interagir avec la grille en cliquant sur 
+                        les cases pour les découvrir. 
+                        <br><br>
+
+                        Le jeu affiche correctement le nombre de mines restantes et 
+                        le chronomètre, et gère correctement les conditions de victoire 
+                        et de défaite.
+                        <br><br> 
+
+                        Le jeu est interactif, avec une interface graphique réactive 
+                        et fluide, offrant une expérience agréable aux utilisateurs.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Demineur.png" alt="Conception du robot">
+                            <figcaption>Partie du démineur en cours.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, le projet de création du jeu Démineur en Java a permis 
+                    d’acquérir une meilleure compréhension de la programmation orientée objet, 
+                    de la gestion d’événements et de la création d’interfaces graphiques. 
+                    <br><br>
+
+                    Grâce à l’utilisation de Java Swing, l’application est conviviale et 
+                    fonctionnelle, offrant une expérience de jeu interactive.
+                    <br><br> 
+
+                    Ce projet illustre l’importance de structurer correctement son 
+                    programme en classes et de gérer les événements de manière efficace.
+                    <br><br>
+                    
+                    Il constitue également une bonne base pour d’autres projets de jeux en Java.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/jeu.png" alt="Robot POB">
+                        <figcaption>Jeu du démineur fonctionnel.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/sae21_2021/RapportDemineur.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>
+
+

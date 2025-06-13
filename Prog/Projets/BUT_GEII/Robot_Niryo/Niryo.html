@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+
+    <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>ROBOT NIRYO</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>L’objectif du projet Robot Niryo est de concevoir un robot autonome 
+                        capable d’effectuer une tâche de "Pick and Place" (prise et dépose d'objets).
+                        <br><br>
+                        Le robot doit être capable de détecter un objet, planifier son mouvement, 
+                        le saisir, le déplacer, puis le déposer à un emplacement défini.
+                        <br><br> 
+                        Le projet utilise un bras robotique avec des capteurs pour détecter les objets, 
+                        une planification de mouvement pour guider le robot et un système de 
+                        préhension pour manipuler l’objet.
+                    </p>                  
+                    <figure class="Sujet_image">
+                        <img src="photos/Robot.png" alt="Robot POB">
+                        <figcaption>Le robot Niryo et son environnement de travail.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Organigramme</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br>  
+                            Représenter visuellement le flux d’actions que le robot doit 
+                            suivre pour accomplir sa tâche de "Pick and Place".  
+                            <br><br>  
+
+                            <strong>Description :</strong><br>  
+                            Le diagramme de flux suit les étapes suivantes :<br>  
+                            1. Détection de l’objet.<br>  
+                            2. Planification du mouvement.<br>  
+                            3. Saisie de l’objet.<br>  
+                            4. Déplacement vers la zone de dépôt.<br>  
+                            5. Dépôt de l’objet.<br>  
+                            6. Retour à la position initiale.  
+                            <br><br>  
+
+                            Chaque étape du processus est illustrée dans le diagramme de flux 
+                            pour clarifier les différentes actions à réaliser.  
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Algo.png" alt="Conception du robot">
+                            <figcaption>Organigramme du fonctionnement du Pick and Place.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Workspace</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Créer un environnement de travail pour le robot, dans lequel 
+                            il pourra interagir avec les objets à manipuler.
+                            <br><br> 
+
+                            <strong>Description :</strong><br> 
+                            Le workspace est une zone délimitée où le robot évolue pour 
+                            détecter et manipuler les objets. 
+                            <br><br>
+                            Des capteurs de proximité et une caméra sont utilisés pour 
+                            repérer les objets dans l'espace et définir leurs positions. 
+                            <br><br>
+                            Le robot doit pouvoir se déplacer dans cette zone de manière fluide 
+                            et éviter les obstacles.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Workspace.jpg" alt="Conception du robot">
+                            <figcaption>Le robot Niryo et sa workspace.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Programmation en Bloc</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Utiliser la programmation par blocs pour développer le code qui 
+                            gère les actions du robot.
+                            <br><br> 
+
+                            <strong>Description :</strong>
+                            <br> La programmation par blocs permet de créer des séquences 
+                            logiques pour contrôler le robot. 
+                            <br><br>
+                            Chaque action (comme la détection d'objet, le mouvement, 
+                            la prise et la dépose) est programmée en blocs distincts, 
+                            facilitant ainsi la gestion et la modification du programme.
+                            <br><br> 
+                            Le robot suit des instructions claires à chaque étape, 
+                            du début à la fin du cycle "Pick and Place".
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Bloc.png" alt="Conception du robot">
+                            <figcaption>Programme bloc - Pick and Place.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>En conclusion, le projet Robot Niryo met en œuvre un robot autonome 
+                        capable de réaliser des tâches complexes de prise et de dépose d'objets 
+                        avec une grande précision. 
+                        <br><br>
+
+                        Grâce à des capteurs de détection, une planification de mouvement 
+                        efficace et une programmation par blocs, ce robot est capable de manipuler 
+                        des objets dans un environnement défini avec succès.
+                        <br><br> 
+                        Ce projet 
+                        démontre l'importance de l'automatisation dans les processus 
+                        industriels et ouvre la voie à de nombreuses applications dans différents 
+                        domaines.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Niryo.png" alt="Robot finalisé">
+                        <figcaption>Robot Niryo faisant du Pick and Place.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport-Robotique_TP.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

@@ -1,0 +1,334 @@
+/*Barre de Navigation*/
+*{
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   margin-top: 15%;
+   font-family: Arial;
+   cursor: default;
+}
+
+#navbar {
+   background: black;
+   color: white;
+   padding: 70px 10px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   transition: 0.4s;
+}
+
+#navbar a{
+   margin-left: -5%;
+   margin-bottom: -5%;
+   font-size: 110%;
+   text-decoration: none;
+   color: white;
+}
+
+#navbar a:hover{
+   margin-left: -5%;
+   margin-bottom: -5%;
+   font-size: 110%;
+   text-decoration: none;
+   background: white;
+   color: black;
+}
+
+#logo-image{
+   float: left;
+}
+
+#navbar #logo {
+   font-size: 35px;
+   font-weight: bold;
+   margin-left: 5%;
+}
+
+ul{
+   list-style: none;
+}
+
+h2{
+   text-align: center;
+   font-size: 200%;
+}
+
+
+/*Menu Burger*/
+#barre{
+  position: absolute;
+  margin-top: -100px;
+  width: 230px;
+  height: 5000%;
+  background: black;
+  right: -300px;
+  transition: .5s ease-out;
+  z-index: 4;
+}
+
+.bouton{
+  position: absolute;
+  top: 100px;
+  right: 350px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.bouton span{
+   width: 60px;
+   height: 10px;
+   border-radius: 10px;
+   background: white;
+   display: block;
+   margin-top: 6px; 
+   transition: 0.3s ease;
+}
+
+li{
+   list-style: none;
+   font-size: 2rem;
+   cursor: pointer;
+   margin-top: 50%;
+}
+
+#barre.active{
+   right:0;
+}
+
+#barre.active .bouton {
+  top: 6.5rem;
+  right: 250px;
+}
+
+#barre.active span {
+  position: absolute;
+}
+
+#barre.active span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+#barre.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#barre.active span:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+#barre.active ~ .content {
+  opacity: 0.3;
+}
+
+#navbar-right {
+   float: right;
+}
+
+
+/*Titre Partie*/
+.Titre{
+   font-size: 220%;
+   padding: 20px;
+   border: 5px solid #A0A0A0; 
+   text-align: center;
+   background: white;
+   margin: 1%;
+}
+
+.Titre_2{
+   font-size: 220%;
+   padding: 20px;
+   border: 5px solid #A0A0A0; 
+   text-align: center;
+   background: white;
+   margin: 1%;
+   margin-top: 10%;
+}
+
+.Themes{
+   color: red;
+   font-size: 130%;
+}
+
+
+/*Texte positionné à coté de l'image*/
+.image{
+   height: 10%;
+   width: 35%;
+   float: left;
+   margin: 2%;
+   margin-left: 5%;
+   border : 2px solid #000000;
+   box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+
+}
+
+#Entreprise{
+   font-size: 120%;
+   text-align: center;
+   margin: 1% 7% 15% 0;
+}
+
+#Entreprise p{
+   margin-left: 7%;
+}
+
+#Objectif p{
+   font-size: 150%;
+   text-align: center;
+}
+
+#Formulaire{
+   font-size: 120%;
+   float: right;
+   margin-right: 10%;
+}
+
+.For{
+   float: right;
+   margin-right: 2%;
+}
+
+h1{
+   margin-left: 25%;
+   font-size: 170%;
+}
+
+/*Image pour Romain et Aubin => les mets à gauche de l'écran*/
+.image_2{
+   height: 400px;
+   float: left;
+   margin: 0 15px 15px 0;
+   margin-left: 10%;
+   margin-right: 5%;
+   border : 2px solid #000000;
+   box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+
+/*Image pour Hugo => le met à droite de l'écran*/
+.image_3{
+   height: 400px;
+   float: right;
+   margin-right: 10%;
+   margin-left: 5%;
+   border : 2px solid #000000;
+   box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+
+/*Logo pour le Formulaire*/
+.image_4{
+   height: 50px;
+   margin-left: 20%;
+   border : 2px solid #000000;
+   box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);   
+}
+
+
+/*Variable Nom & tab*/
+.Nom_Aubin_Romain{
+   font-size: 150%;
+   font-weight: bold;
+   text-decoration: underline;
+   margin-left: 47%;
+}
+
+.Aubin_Romain{
+   font-size: 130%;
+   margin: 2% 3% 20% 20%;
+}
+
+.Nom_Hugo{
+   font-size: 150%;
+   font-weight: bold;
+   text-decoration: underline;
+   margin-left: 7%;
+}
+
+.Hugo{
+   font-size: 130%;
+   margin: 2% 0 20% 10%;
+}
+
+
+/*Impression CVs*/
+.cv{
+    display: none;
+    max-width: 100% ;
+    max-height: 100% ;
+}
+
+
+.imprime{
+    font-size: 90%;
+    padding: 0.5%;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 20px;
+
+}
+
+#copyright{
+    color: var(--main-color);
+    padding-top: 2%;
+    text-align: center;
+}
+
+
+/*Logo + Liens vers les Réseaux Sociaux*/
+.Reseaux{
+   font-size: 20px;
+   color: white;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   margin-bottom: -50%;
+   border-top: 5px solid #A0A0A0; 
+   background: rgb(39, 55, 70);
+   justify-content: center;
+}
+
+.Reseaux p{
+   text-align: center;
+   text-decoration: underline;
+}
+
+.Icone_Logo{
+   text-align: center;
+}
+
+.Icone_Logo a{
+   margin: 10%;
+   text-decoration:none; 
+}
+
+.Icone_Logo img{
+   height: 75px;
+   cursor: pointer;
+   border: 2px solid white; 
+   border-radius: 10px;
+}
+
+
+/*Bouton retour haut de page */
+.scrollUp{
+   height: 100px;
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   cursor: pointer;
+} 
+
+.icone{
+   width: 50px;
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>TAQUIN EN C</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>Le projet consiste à créer un jeu de Taquin en langage C, une version numérique du célèbre puzzle.
+                        <br><br>
+                        Le jeu se joue sur un plateau divisé en petites cases qui, au départ, sont organisées dans un ordre précis.
+                        <br><br>
+                        L'objectif du joueur est de remettre les pièces dans leur ordre initial, en déplaçant les cases une par une.
+                        <br> <br>
+                        Le jeu propose plusieurs niveaux de difficulté en permettant à l'utilisateur de choisir le nombre de lignes et de 
+                        colonnes de la grille, ainsi que l'image qui sera découpée et utilisée pour la grille de jeu.
+                        <br><br> 
+                        Ce projet a pour but de mettre en pratique des compétences en programmation, en gestion de la mémoire et 
+                        en conception d'interfaces graphiques simples tout en respectant une structure modulaire.               
+                    </p>
+                    <figure class="Sujet_image">
+                        <img src="photos/Taquin.png" alt="Robot POB">
+                        <figcaption>Jeu du taquin.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Interface graphique menu</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Fenêtre de menu :</strong><br>
+                            L'interface graphique du jeu commence par une fenêtre de menu qui permet à 
+                            l'utilisateur de définir les paramètres du jeu avant de commencer.
+                            <br><br>
+
+                            <strong>Paramètres configurables :</strong><br>
+                            Dans cette fenêtre, l'utilisateur peut choisir le nombre de lignes et de colonnes 
+                            pour la grille du Taquin, ainsi que l'image qu'il souhaite utiliser parmi trois options proposées.
+                            <br><br> 
+
+                            <strong>Interface intuitive :</strong><br>
+                            Ces choix sont effectués par le biais d'une interface intuitive et visuelle.
+                            <br><br>
+
+                            <strong>Récapitulatif des options :</strong><br>
+                            En plus de la sélection de la grille et de l'image, l'interface affiche également un 
+                            tableau récapitulatif des options choisies, avec un design simple et épuré.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Menu.png" alt="Conception du robot">
+                            <figcaption>Interface graphique de notre menu du taquin.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : La Programmation</h2>
+                    <div class="Etape">
+                        <p>
+                            <strong>Organisation du programme :</strong><br>
+                            Le programme est structuré en deux fichiers principaux : "main.c" pour la logique du jeu 
+                            et "affichage.c" pour la gestion de l'interface graphique.
+                            <br><br> 
+
+                            <strong>Fichier main.c :</strong><br>
+                            "Main.c" gère la création et le mélange de la grille sous forme de matrice, 
+                            ainsi que les déplacements des pièces via les touches du clavier.
+                            <br><br> 
+
+                            <strong>Fichier affichage.c :</strong><br>
+                            "Affichage.c" s'occupe de l'affichage graphique de la grille et de l'image découpée, 
+                            ainsi que de la gestion du menu.
+                            <br><br> 
+
+                            <strong>Avantages :</strong><br>
+                            Cette séparation permet de maintenir un code modulaire et de faciliter les modifications 
+                            futures, comme le changement de la bibliothèque graphique.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Jeu.png" alt="Conception du robot">
+                            <figcaption>Interface d'une partie de cours du taquin.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>Le projet de création du jeu de Taquin en C a permis de combiner des concepts de 
+                        programmation fondamentaux avec la mise en œuvre d'une interface graphique.
+                        <br><br> 
+                        La gestion de la grille sous forme de matrice, ainsi que l'algorithme de mélange, offrent
+                        une base solide pour ce type de jeu, et l'interface utilisateur permet d'améliorer l'expérience du joueur.
+                        <br><br> 
+                        En séparant le code en deux fichiers distincts, nous avons pu garder une structure modulaire 
+                        et facilement modifiable, ce qui est un avantage important pour la maintenance du code à long terme.
+                        <br><br> 
+                        Le programme garantit que la grille sera toujours résoluble après le mélange, ce qui assure 
+                        une expérience de jeu cohérente.
+                        <br><br> 
+                        Finalement, ce projet a été une excellente occasion de développer des compétences en 
+                        programmation en C, tout en mettant en pratique des techniques de gestion de la mémoire, 
+                        d'algorithmique et d'interfaces graphiques.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Taquin.png" alt="Robot POB">
+                        <figcaption>Jeu du taquin fonctionnel.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Taquin Besson-Tourais.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

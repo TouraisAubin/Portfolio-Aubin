@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>CREATION OS WINDOWS 7</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">
+                    <p>L’objectif du projet est d’installer Windows 7 sur un ordinateur.
+                    <br><br>
+
+                    Cette tâche implique la préparation du matériel, la configuration du BIOS, 
+                    et l’installation proprement dite de l’OS.
+                    <br><br>
+
+                    L’installation d’un système d’exploitation est essentielle 
+                    pour rendre un ordinateur fonctionnel et permettre l’utilisation de logiciels spécifiques.
+                    <br><br>
+
+                    Ce projet comprend également les étapes de préparation du support 
+                    d’installation (DVD ou clé USB), la configuration des paramètres de démarrage 
+                    dans le BIOS, et l’installation proprement dite de Windows 7 avec les bonnes options.
+                    </p>              
+                    <figure class="Sujet_image">
+                        <img src="photos/windows.png" alt="Robot POB">
+                        <figcaption>Système d'exploitation Windows 7.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Partitionnement du disque</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Préparer le disque dur pour l’installation en créant les partitions nécessaires à 
+                        l’installation des systèmes d’exploitation.
+                        <br><br> 
+
+                        Cette étape consiste à diviser l’espace disque en différentes partitions, 
+                        une pour Windows et une autre pour Arch Linux.<br>
+                        Il est conseillé de réserver de l’espace non alloué pour permettre l’installation du dual boot.
+                        <br><br> 
+
+                        1. Utilisation d’un outil de partitionnement : 
+                        vous pouvez utiliser le gestionnaire de partitions intégré dans l’installeur de Windows pour créer les partitions nécessaires.<br><br> 
+
+                        2. Création des partitions : 
+                        une partition principale pour Windows et une partition pour Arch Linux (en format ext4) 
+                        doivent être créées, ainsi qu'une partition de swap si nécessaire pour Linux.
+                        <br><br> 
+
+                        Veillez à bien configurer la taille des partitions en fonction des
+                        besoins du client et des exigences des deux systèmes d’exploitation.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/disk.png" alt="Conception du robot">
+                            <figcaption>Répartition des partitionnement du disque.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Installation de Windows</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Installer Windows sur la première partition créée, en veillant à respecter la procédure d’installation de l’OS.
+                        <br><br>
+
+                        1. Démarrage sur le support d’installation : insérez le support 
+                        d’installation de Windows (DVD ou clé USB) et redémarrez l’ordinateur. 
+                        Accédez au BIOS et définissez le périphérique de démarrage sur le support d’installation.
+                        <br><br> 
+
+                        2. Sélection de la partition : lors de l’installation de Windows, 
+                        sélectionnez la partition qui lui est réservée et effectuez l’installation sur cette partition.
+                        <br><br> 
+
+                        3. Configuration de Windows : une fois l’installation terminée, suivez les étapes 
+                        pour configurer la langue, le fuseau horaire, et créez un compte utilisateur.
+                        <br><br> 
+
+                        Une fois Windows installé, vous pourrez commencer à installer les pilotes 
+                        nécessaires et les applications demandées par le client.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/W7.png" alt="Conception du robot">
+                            <figcaption>Installation de windowss 7.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Installation d’Arch linux</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Installer Arch Linux sur la deuxième partition, en suivant les étapes d’installation typiques 
+                        de cette distribution.
+                        <br><br> 
+
+                        1. Démarrage sur le support d’installation d’Arch Linux : insérez le support 
+                        d’installation d’Arch Linux et redémarrez l’ordinateur. 
+                        Accédez au BIOS et modifiez l’ordre de démarrage pour démarrer sur le support d’installation.
+                        <br><br> 
+
+                        2. Partitionnement : utilisez un outil comme fdisk ou parted pour formater la 
+                        partition réservée à Arch Linux en ext4 et créer une partition swap si nécessaire.
+                        <br><br> 
+
+                        3. Installation de base : suivez les instructions d’installation de base d’Arch Linux
+                        pour installer le système de fichiers, le noyau et la configuration de base.
+                        <br><br> 
+
+                        4. Installation des outils de gestion de boot : pour configurer un dual boot, 
+                        installez un chargeur de démarrage comme GRUB qui permettra de choisir entre Windows 
+                        et Arch Linux au démarrage.
+                        <br><br> 
+
+                        Une fois Arch Linux installé, vous pourrez configurer les utilisateurs et 
+                        installer les applications supplémentaires demandées par le client.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Archlinux.png" alt="Conception du robot">
+                            <figcaption>Installation d'Archlinux dans la console.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Installation du Dual boot</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Configurer un dual boot afin que l’ordinateur démarre soit sur Windows, soit sur 
+                        Arch Linux selon le choix de l’utilisateur.
+                        <br><br> 
+
+                        1. Installation de GRUB : lorsque les deux systèmes sont installés, installez 
+                        GRUB en utilisant les commandes appropriées sous Arch Linux pour qu’il détecte 
+                        automatiquement Windows et l’ajoute à son menu de démarrage.
+                        <br><br> 
+
+                        2. Configuration du fichier de configuration de GRUB : mettez à jour la configuration 
+                        de GRUB pour ajouter l’option Windows au menu de démarrage en exécutant la commande appropriée.
+                        <br><br> 
+
+                        3. Vérification du dual boot : redémarrez l’ordinateur pour vérifier que vous pouvez 
+                        choisir entre Windows et Arch Linux au démarrage. 
+                        Assurez-vous que les deux systèmes d’exploitation se lancent correctement.
+                        <br><br> 
+
+                        Une fois le dual boot configuré, vous pourrez fournir l’ordinateur avec les deux systèmes prêts à l’emploi.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/config.png" alt="Conception du robot">
+                            <figcaption>Installation du Dual Boot dans la console.</figcaption>
+                       </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>Ce projet a permis d’installer deux systèmes d’exploitation (Windows et Arch Linux) sur un 
+                    même poste de travail, en configurant un système de dual boot. 
+                    <br><br>
+                    Cela permet au client d’avoir accès à deux environnements de travail distincts selon ses besoins.
+                    <br><br> 
+                    Il est important de suivre les étapes du processus d’installation pour éviter toute perte 
+                    de données et garantir que les systèmes d’exploitation fonctionnent correctement. 
+                    <br><br>
+                    Ce type de projet est couramment utilisé pour offrir une flexibilité d’utilisation en 
+                    fonction des préférences de l’utilisateur.
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/windows.png" alt="Robot POB">
+                        <figcaption>Système Windows 7 installé.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/OS Windows - besson-tourais-notice-sae.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>

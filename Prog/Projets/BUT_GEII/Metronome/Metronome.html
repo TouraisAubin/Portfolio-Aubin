@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Pour les logos -->
+        <link rel="stylesheet" href="../../styleProjets-commun.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Aubin TOURAIS</title>
+    </head>
+
+    <body>
+    <div id="particles-js"></div>
+        <!-- EN-TÊTE -->
+        <header>
+            <div class="logo">
+                <h1>Portfolio - Aubin</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../../../Accueil/index.html">Accueil</a></li>
+                    <li class="projets">
+                        <a href="../../../Projets/Projets.html" class="active">Projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Projets/Projets.html#BUT_Informatique">BUT INFO</a></li>
+                            <li><a href="../../../Projets/Projets.html#BUT_GEII">BUT GEII</a></li>
+                            <li><a href="../../../Projets/Projets.html#Concours">Concours</a></li>
+                            <li><a href="../../../Projets/Projets.html#Stages">Stages</a></li>
+                        </ul>
+                    </li>
+                    <li class="Moi">
+                        <a href="../../../Moi/Moi.html">Moi</a>
+                        <ul class="dropdown">
+                            <li><a href="../../../Moi/Moi.html#Aubin">Presentation</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV">Mon CV</a></li>
+                            <li><a href="../../../Moi/Moi.html#MonCV_Video">Mon CV VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../Contact/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenu">
+            <!-- TITRE PRINCIPAL -->
+            <section class="Titre">
+                <h1>METRONOME</h1>
+            </section>
+
+            <!-- NAVIGATION SECONDAIRE -->
+            <div class="button">
+                <a href="#Sujet" class="btn">Le Sujet</a>
+                <a href="#Etapes" class="btn">Les Étapes de Réalisation</a>
+                <a href="#Conclusion" class="btn">Conclusion</a>
+            </div>
+
+            <!-- SECTION : LE SUJET -->
+            <section class="projet">
+                <h1 class="titre-atout">Le Sujet</h1>                    
+                <div class="Presentation_Sujet" id="Sujet">                  
+                    <p> 
+                        <strong>Objectif :</strong><br> 
+                        Réaliser un métronome électronique qui permet de générer un son à intervalles réguliers, 
+                        tout en offrant des réglages personnalisables pour la fréquence des battements (BPM) et la hauteur du son. 
+                        <br><br> 
+
+                        <strong>Description :</strong><br> 
+                        Un métronome est un appareil utilisé par les musiciens pour maintenir un tempo stable. 
+                        <br><br>
+
+                        Dans ce projet, nous avons conçu un modèle électronique avec un réglage précis du tempo (40 à 208 BPM) 
+                        et de la hauteur du son (250 Hz à 10 kHz). 
+                        <br><br>
+
+                        Ce métronome a pour but d’être versatile et adapté à différents types de musique et d’instruments. 
+                        <br><br> 
+
+                        <strong>Cahier des charges :</strong><br> 
+                        La fréquence des battements doit être ajustable entre 40 et 208 BPM pour couvrir tous les types de musique classique.
+                        <br> <br>
+
+                        La fréquence sonore doit être réglable entre 250 Hz et 10 kHz pour convenir à différents instruments. 
+                        <br><br>
+
+                        La durée des battements doit être proche de 20 ms pour garantir une précision optimale. 
+                    </p>
+                    <figure class="Sujet_image">
+                        <img src="photos/Metronome.jpg" alt="Robot POB">
+                        <figcaption>Métronome électrique.</figcaption>
+                    </figure>                
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : LES ÉTAPES DE RÉALISATION -->
+            <section class="projet">
+                <h1 class="titre-atout">Les Étapes de Réalisation</h1>
+                <div class="Etapes_Realisation" id="Etapes">
+                    <h2>Étape 1 : Schéma Fonctionnel</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                        Concevoir un schéma fonctionnel détaillant le rôle de chaque composant dans le circuit du métronome. 
+                        <br><br> 
+
+                        <strong> Rôle des composants :</strong><br> 
+                        Décrire comment on génère le signal sonore, comment la fréquence est ajustée, 
+                        et comment le haut-parleur émet le son. 
+                        <br><br> 
+
+                        <strong> Interconnexion des composants :</strong><br> 
+                        Représenter comment les composants sont reliés, y compris le système de contrôle pour l’ajustement de la fréquence et du tempo. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/SchémaFonctionnel.png" alt="Conception du robot">
+                            <figcaption>Schéma fonctionnel du métronome.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 2 : Schématisation</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Concevoir un schéma du circuit du métronome électronique en définissant les composants nécessaires et
+                            leur interconnexion.
+                            <br><br> 
+
+                            <strong>Étude des besoins :</strong><br> 
+                            Représenter les composants comme les générateurs de fréquence, 
+                            le haut-parleur et les éléments de régulation du tempo.
+                            <br><br> 
+
+                            <strong>Choix des composants :</strong><br> 
+                            Sélectionner les composants appropriés en fonction des spécifications du cahier des charges et 
+                            du schéma de circuit à concevoir.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Schéma.png" alt="Conception du robot">
+                            <figcaption>Schéma électrique du métronome.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 3 : Calculs</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Effectuer les calculs nécessaires pour garantir un fonctionnement précis du métronome. 
+                            <br><br> 
+
+                            <strong>Fréquence des battements :</strong><br> 
+                            Calculer la plage de fréquence des battements (40-208 BPM) et vérifier que chaque valeur du tempo 
+                            soit ajustable facilement. 
+                            <br><br> 
+
+                            <strong>Fréquence sonore :</strong><br> 
+                            Déterminer comment ajuster la fréquence du son entre 250 Hz et 10 kHz en fonction des besoins du projet. 
+                            <br><br> 
+
+                            <strong>Temps de battement :</strong><br> 
+                            Vérifier que chaque battement a une durée de 20 ms et que la variation du tempo respecte cette contrainte. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Calcul.jpg" alt="Conception du robot">
+                            <figcaption>Quelques calculs pour déterminer les plages.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 4 : Montage des composants</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Assembler tous les composants du métronome électronique sur plaque à trou. 
+                            <br><br> 
+
+                            <strong>Montage des composants :</strong><br> 
+                            Positionner chaque composant sur la plaque à trou en suivant le schéma de montage, 
+                            en prenant soin d’éviter les court-circuits. 
+                            <br><br> 
+
+                            <strong>Vérification du montage :</strong><br> 
+                            S’assurer que tous les composants sont correctement montés et que tout est prêt pour les tests fonctionnels. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Plaque.png" alt="Conception du robot">
+                            <figcaption>Montage du métronome sur plaque à trous.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 5 : Réalisation du Typon</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Concevoir le typon du circuit imprimé (PCB) pour le montage des composants. 
+                            <br><br> 
+
+                            <strong>Disposition des composants :</strong><br> 
+                            Organiser les composants de manière logique sur le PCB pour minimiser les interférences et 
+                            maximiser l’efficacité du circuit. 
+                            <br><br> 
+
+                            <strong>Traçage des pistes :</strong><br> 
+                            Créer les pistes conductrices pour connecter tous les composants entre eux, 
+                            tout en respectant les normes de conception des PCB. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/typon.png" alt="Conception du robot">
+                            <figcaption>Réalisation du typon pour le métronome.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 6 : Nomenclature</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Lister tous les composants utilisés dans le projet et leur rôle dans le circuit. 
+                            <br><br>
+
+                            <strong>Composants principaux :</strong><br> 
+                            Résistances, condensateurs, potentiomètre, transistor, NE555, haut-parleur, etc. 
+                            <br><br> 
+
+                            <strong>Rôle de chaque composant :</strong><br> 
+                            Donner les noms de chaque composant pour pouvoir les identifier sur le schéma électrique.
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Nomenclature.png" alt="Conception du robot">
+                            <figcaption>Nomenclature de l'ensemble des composants utilisés.</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Étape 7 : Bilan - Coûts</h2>
+                    <div class="Etape">
+                        <p><strong>Objectif :</strong><br> 
+                            Estimer le coût total des composants nécessaires à la réalisation du projet. 
+                            <br><br> 
+
+                            <strong>Analyse des coûts :</strong><br> 
+                            Comparer les prix des différents composants pour déterminer le coût total du projet. 
+                            <br><br> 
+
+                            <strong>Optimisation du budget :</strong><br> 
+                            Chercher des alternatives pour réduire les coûts sans compromettre la qualité des composants. 
+                        </p>
+                        <figure class="Exemple_image">
+                            <img src="photos/Cout.png" alt="Conception du robot">
+                            <figcaption>Coût global pour la réalisation du métronome.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <!-- SECTION : CONCLUSION -->
+            <section class="projet">
+                <h1 class="titre-atout">Conclusion du Projet</h1>
+                <div class="Conclusion_Sujet" id="Conclusion">
+                    <p>La réalisation du métronome électronique a permis de mettre en pratique nos compétences en électronique, 
+                        programmation et conception de circuits. 
+                        <br><br>
+
+                        Grâce à une planification soignée et une série de tests rigoureux, 
+                        le projet a abouti à un produit fonctionnel répondant aux exigences du cahier des charges. 
+                        <br><br> 
+
+                        Ce projet a aussi montré l’importance des calculs précis, du choix des composants et 
+                        de l’optimisation des coûts pour la réussite de ce type de réalisation. 
+                        <br><br>
+                        
+                        À l’avenir, des améliorations, telles qu’une interface utilisateur plus intuitive ou l'ajout 
+                        de fonctionnalités supplémentaires, pourraient rendre le métronome encore plus performant. 
+                    </p>
+                    <figure class="Image_final">
+                        <img src="photos/Metronome.jpg" alt="Robot POB">
+                        <figcaption>Métronome électrique final, après montage sur typon.</figcaption>
+                    </figure>
+                </div>
+                <div class="Bonus_Sujet">
+                    <a href="Autres/Rapport Metronome - TOURAIS et HUYNH.pdf" target="_blank">Lien vers le rapport du projet</a>
+                </div>
+            </section>
+        </div>
+        
+            <!-- Bouton "Remonter en haut" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">
+            ↑
+        </button>
+    </body>
+
+    <!-- BAS DE PAGE -->
+    <footer>
+        <p class="copyright">&copy; 2025 - Aubin TOURAIS</p>
+
+        <div class="reseaux">
+            <a href="https://www.linkedin.com/in/aubin-tourais-b04a3a297" target="_blank"> <img src="../../../../Pictures/linkedin.svg" alt="LinkedIn"> </a>
+            <a href="https://www.instagram.com/bainbain_trs/" target="_blank"> <img src="../../../../Pictures/instagram.svg" alt="Instagram"> </a>
+            <a href="https://github.com/TouraisAubin?tab=repositories" target="_blank"> <img src="../../../../Pictures/github.svg" alt="GitHub"> </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../../particles-config.js"></script>
+</html>
