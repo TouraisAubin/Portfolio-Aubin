@@ -1,7 +1,8 @@
 # Portfolio-Aubin
 
 Il s'agit de **mon propre site web**, entièrement programmé par moi-même, faisant office de **portfolio personnel**.
-Site web réalisé en HTML, CSS et du JavaScript également. 
+
+J'ai eu l'occasion de pouvoir réalisé site web en : HTML, CSS et du JavaScript également. 
 
 Vous y retrouverez l'intégralité de mon **parcours post-bac** :  
 - Mes **formations**,  
